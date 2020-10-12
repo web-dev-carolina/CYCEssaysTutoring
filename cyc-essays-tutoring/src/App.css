@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.jumbotron {
+  background-color:white !important;
+  width:100vw !important;
+  height:100vh !important;
+}
+
+.App-link {
+  color: hsl(193, 95%, 68%);
+}
+.bg-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.bg-image {
+  background-image: url('./pexels-caio-46274.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container {
+display: block;
+width: 100vw;
+margin-right: auto;
+margin-left: auto;
+grid-auto-columns: 1fr;
+-ms-grid-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+-ms-grid-rows: auto auto;
+grid-template-rows: auto auto;
+}
+.motto-wrap {
+  width: 80%;
+  margin-right: auto;
+  margin-bottom: 85px;
+  margin-left: auto;
+  text-align: center;
+}
+.heading-jumbo-small {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: none;
+}
+.home-content-wrap {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 991px) {
+.about-grid {
+    grid-row-gap: 50px;
+    grid-template-areas:
+        "."
+        ".";
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto 50px auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+}
+@media screen and (max-width: 991px) {
+.about-grid.cc-about-2 {
+    grid-template-areas:
+        "."
+        ".";
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+}
+}
+.about-grid.cc-about-2 {
+    grid-template-areas: ". .";
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+@media screen and (max-width: 991px) {
+#w-node-76c147234d3f-15c47b42 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+    max-width: 100%;
+}
+}
+#w-node-76c147234d3f-15c47b42 {
+    width: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    max-width: 100%;
+
+}
+.img {
+  border:0;
+  vertical-align: middle;
+ 
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
