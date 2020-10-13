@@ -12,7 +12,7 @@ const NavbarContainer = () => {
   return (
     <>
       <Navbar sticky="top" bg="light" variant="light" className="navbar">
-        <Navbar.Brand className="mr-auto logo-nav">CYC</Navbar.Brand>
+        <Navbar.Brand className="mr-auto logo-nav">Inner Stories</Navbar.Brand>
         <Nav className="mx-auto">
           <Nav.Link as={Link} to="/">Home</Nav.Link>
           <Nav.Link>About</Nav.Link>
