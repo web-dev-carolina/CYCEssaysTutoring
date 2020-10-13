@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button'
 const Intro = () => {
     return (
             <Jumbotron className="bg-container">
+                
                 <div className="bg-image">
                 <div className="jumbotronText">
                     <h1 className='jumbo-title'>Hello, world!</h1>
