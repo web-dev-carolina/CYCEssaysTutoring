@@ -17,7 +17,7 @@ const NavbarContainer = () => {
         <Nav className="mx-auto">
           <Nav.Link as={Link} to="/">Home</Nav.Link>
           <Nav.Link as={HLink} to="/#about">About</Nav.Link>
-          <Nav.Link as={Hlink} to="/#contact">Contact</Nav.Link>
+          <Nav.Link as={HLink} to="/#contact">Contact</Nav.Link>
           <Nav.Link as={Link} to="resources">Resources</Nav.Link>
         </Nav>
         <Button as={Link} to="registration" variant="dark" className="ml-auto">Schedule</Button>
