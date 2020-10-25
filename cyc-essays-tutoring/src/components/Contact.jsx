@@ -5,14 +5,11 @@ const Contact = () => {
     return (
         <div className="container">
             <div className="home-section-wrap">
-                <div class="space">
-                    <h2 className="section-heading">Contact Form</h2>
-                </div>
-                
                 <div class="text-holder left">
                     <div class="pg1-2-txt">
                         
                         <div class="space">
+                            <h2 className="section-heading">Contact</h2>
                             <p className="paragraph-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                             Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
                             parturient montes, nascetur ridiculus 
