@@ -1,0 +1,43 @@
+    
+
+    .text-holder {
+        width:50%;
+    }
+    .container {
+        display: block;
+        width: 100vw;
+        margin-right: auto;
+        margin-left: auto;
+        grid-auto-columns: 1fr;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        }
+    
+    .left {
+        float:left;
+    }
+    
+    .right {
+        float: right;
+    }
+    
+    .pg1-2-txt {
+        width:80%;
+        /* text-align: center; */
+        margin:0 auto;
+        padding:1em;
+    
+    }
+    .img {
+        width: 300px;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .space { 
+        margin-top: 150px; 
+    }
