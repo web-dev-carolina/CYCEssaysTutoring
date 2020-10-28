@@ -24,7 +24,7 @@ const About = () => {
                     <Card.Img variant='top' className='icon' src='https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg'/>
                     <Card.Title>Title goes here</Card.Title>
                     <Card.Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                            Aenean commodo ligula eget dolor.  </Card.Text>
+                            Aenean commodo ligula eget dolor. </Card.Text>
                 </Card>
                 <Card style={{width:'15rem', height:'15rem'}} className=' p-2'>
                     <Card.Img variant='top' className='icon' src='https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg'/>
