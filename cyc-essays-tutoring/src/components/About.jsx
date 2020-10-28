@@ -1,55 +1,49 @@
-import React from 'react'
+import React from 'react';
+import powerofpen from './powerofpen.svg';
+import Card from 'react-bootstrap/Card';
+import './About.css';
 
 const About = () => {
     return (
-        <div className="container" id="about">
-            <div className="motto-wrap">
-                <div className="label cc-light">About</div>
-                <div className="heading-jumbo-small">Nulla vel sodales tellus, quis condimentum enim.
-                            Nunc porttitor venenatis feugiat. Etiam quis faucibus erat, non accumsan leo.
-                            Aliquam erat volutpat. Vestibulum ac
-                    <br></br>
+        <div className="container mb-5 row mr-auto ml-auto" id="about">
+            <div style={{ height:'110%'}} className='col-xs-12 col-md-6 '>
+                <h2 className='about-heading mb-3'>
+                    About
+                </h2>
+                <div className="">
+                
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+                parturient montes, nascetur ridiculus 
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                <div className='mt-5 mb-3'></div>
+                Description of what the workshop is.
+                </div>
+                <div className='container mt-5'>
+                <Card style={{width:'15rem', height:'15rem'}} className='left p-2'>
+                    <Card.Img variant='top' className='icon' src='https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg'/>
+                    <Card.Title>Title goes here</Card.Title>
+                    <Card.Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor.  </Card.Text>
+                </Card>
+                <Card style={{width:'15rem', height:'15rem'}} className=' p-2'>
+                    <Card.Img variant='top' className='icon' src='https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg'/>
+                    <Card.Title>
+                        Title goes here
+                    </Card.Title>
+                    <Card.Text>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor.  
+                    </Card.Text>
+                </Card>
                 </div>
             </div>
-            <div className="divider">
+            <div className="col-xs-12 col-md-6">
+                <img src={powerofpen} alt="pen image" className="mt-5 mb-5 img-fluid rounded" />
             </div>
-            <div className="home-content-wrap">
-                <div className="w-layout-grid about-grid">
-                <div id="w-node-76c147234d34-15c47b42">
-                    <img src="https://uploads-ssl.webflow.com/5f82810dd032426467606c98/5f82810daca6c94597c47b66_placeholder%203.svg" id="w-node-76c147234d3f-15c47b42" alt="">
-                        </img>
-                        <div className="home-section-wrap">
-                            <div className="label cc-light">About</div>
-                            <h2 className="section-heading">Who we are</h2>
-                            <p className="paragraph-light">Nulla vel sodales tellus, quis condimentum enim.
-                            Nunc porttitor venenatis feugiat. Etiam quis faucibus erat, non accumsan leo.
-                            Aliquam erat volutpat. Vestibulum ac faucibus eros. Cras ullamcorper gravida
-                                     tellus ut consequat.</p>
-                        </div>
-                        <a href="/about" className="button w-inline-block">
-                            <div>Learn More</div>
-                        </a>
-                    </div>
-                    
-                </div>
-                <div className="w-layout-grid about-grid cc-about-2">
-                    <div id="w-node-76c147234d41-15c47b42">
-                    
-                        <div className="home-section-wrap">
-                            <div className="label cc-light">Team</div>
-                            <h2 className="section-heading">What we do</h2>
-                            <p className="paragraph-light">Nulla vel sodales tellus, quis condimentum enim. Nunc porttitor venenatis feugiat.
-                            Etiam quis faucibus erat, non accumsan leo. Aliquam erat volutpat. Vestibulum ac faucibus eros. Cras ullamcorper gravida tellus ut consequat.
-                                                         </p>
-                        </div>
-                        <a href="/team" className="button w-inline-block">
-                            <div>Learn More</div>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
+
         </div>
+    
 
     );
 }

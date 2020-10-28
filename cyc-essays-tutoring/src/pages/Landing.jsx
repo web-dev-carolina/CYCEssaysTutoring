@@ -3,6 +3,7 @@ import About from '../components/About';
 import Intro from '../components/Intro';
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer/Footer';
 
 const Landing = () => {
 
@@ -12,6 +13,7 @@ const Landing = () => {
             <About></About>
             <Testimonials></Testimonials>
             <Contact></Contact>
+            <Footer></Footer>
         </>
     );
 
