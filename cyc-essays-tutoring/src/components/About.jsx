@@ -39,7 +39,7 @@ const About = () => {
                 </div>
             </div>
             <div className="col-xs-12 col-md-6">
-                <img src={powerofpen} alt="pen image" className="mt-5 mb-5 img-fluid rounded" />
+                <img src={powerofpen} alt="pens" className="mt-5 mb-5 img-fluid rounded" />
             </div>
 
         </div>
