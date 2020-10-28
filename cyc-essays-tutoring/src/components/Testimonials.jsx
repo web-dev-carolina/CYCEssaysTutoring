@@ -5,9 +5,8 @@ import Books from './testimonials2.png'
 const Testimonials = () => {
     return(
         
-        <div className="container">
-            <div className="home-section-wrap">
-                <h2 className="section-heading" >Testimonials</h2>
+        <section className="container">
+                <h2 className=" text-left text-justify" >Testimonials</h2>
                 <div class="text-holder right">
                     <div class="pg1-2-txt">
                         <div class="space">
@@ -36,9 +35,8 @@ const Testimonials = () => {
                         </div>
                     </div>
                 </div>    
-            </div>
             
-        </div>
+        </section>
         
     );
 }

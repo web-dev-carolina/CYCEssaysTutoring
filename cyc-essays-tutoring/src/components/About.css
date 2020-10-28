@@ -6,6 +6,7 @@
     .container {
         display: block;
         width: 100vw;
+        height: 50vh;
         margin-right: auto;
         margin-left: auto;
         grid-auto-columns: 1fr;
@@ -22,14 +23,6 @@
     .right {
         float: right;
     }
-    
-    .pg1-2-txt {
-        width:80%;
-        /* text-align: center; */
-        margin:0 auto;
-        padding:1em;
-    
-    }
     .img {
         width: 300px;
         border-radius: 50%;
@@ -37,7 +30,8 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-    .space { 
-        margin-top: 150px; 
-    }
+    .icon {
+        width: 100%;
+        max-width: 30px;
+        height: auto; 
+     }

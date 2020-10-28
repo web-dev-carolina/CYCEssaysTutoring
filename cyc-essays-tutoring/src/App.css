@@ -37,7 +37,7 @@
   margin-right: auto;
 }
 .bg-image {
-  background-image: url('./pexels-caio-46274.jpg');
+  background-image: url('book.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +45,7 @@
   width: 100%;
   height: 100%;
 }
-.container {
+/* .container {
 display: block;
 width: 100vw;
 margin-right: auto;
@@ -55,7 +55,7 @@ grid-auto-columns: 1fr;
 grid-template-columns: 1fr 1fr;
 -ms-grid-rows: auto auto;
 grid-template-rows: auto auto;
-}
+} */
 .motto-wrap {
   width: 80%;
   margin-right: auto;
