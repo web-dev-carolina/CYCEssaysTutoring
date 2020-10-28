@@ -1,0 +1,46 @@
+html {
+    height:100vh;
+    padding: 0;
+}
+
+.resources-container {
+    background-color: #F8F8FF;
+    width: 100vh;
+    min-height: 100%;
+    padding: 0;
+}
+
+.fileMain {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ .icon {
+    width: 100%;
+    max-width: 30px;
+    height: auto; 
+ }
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: '400';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    
+    color: #091133;
+}
+
+p {
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: '400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #5D6970;
+}
