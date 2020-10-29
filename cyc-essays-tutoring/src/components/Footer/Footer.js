@@ -20,18 +20,7 @@ const Footer = () => {
                     <div className='col-1'>
                     </div>
                 </Row>
-                <hr width='75%' />                
-                {/* <Row className=''>
-                <div className='col-3'>
-                    </div>
-                    <div className='col-3 ml-auto'>
-                        
-                    </div>
-                    <div className='col-3'>
-                    </div>
-                    <div className='col-3'>
-                    </div>
-                </Row> */}
+                <hr width='75%' />
             </footer>
         </>
     );
