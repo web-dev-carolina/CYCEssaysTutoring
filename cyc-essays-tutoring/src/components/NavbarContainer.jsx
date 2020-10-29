@@ -1,6 +1,5 @@
 import React from 'react';
 import { Navbar, Nav, Button, } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { HashLink as HLink } from 'react-router-hash-link';
 import { Route, Switch} from 'react-router-dom';
 import Landing from '../pages/Landing.jsx';
@@ -15,12 +14,14 @@ const NavbarContainer = () => {
       <Navbar sticky="top" bg="light" variant="light" className="navbar">
         <Navbar.Brand className="mr-auto logo-nav">Inner Stories</Navbar.Brand>
         <Nav className="mx-auto">
-          <Nav.Link as={Link} to="/">Home</Nav.Link>
+          <Nav.Link as={HLink} to="/#intro">Home</Nav.Link>
           <Nav.Link as={HLink} to="/#about">About</Nav.Link>
+          <Nav.Link as={HLink} to="/#testimonials">Testimonials</Nav.Link>
           <Nav.Link as={HLink} to="/#contact">Contact</Nav.Link>
-          <Nav.Link as={Link} to="resources">Resources</Nav.Link>
+          <Nav.Link as={HLink} to="resources">Resources</Nav.Link>
+          {/* links aren't navigating to the right page/section */}
         </Nav>
-        <Button as={Link} to="registration" variant="dark" className="ml-auto">Schedule</Button>
+        <Button as={HLink} to="registration" variant="dark" className="ml-auto">Schedule</Button>
       </Navbar>
       <Switch>
         <Route exact path="/" component={Landing}/>

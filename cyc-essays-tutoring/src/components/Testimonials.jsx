@@ -2,10 +2,12 @@ import React from 'react'
 import './testimonials.css'
 import Pens from './testimonials1.png'
 import Books from './testimonials2.png'
+import './testimonials.css'
+ 
 const Testimonials = () => {
     return(
         
-        <section className="container">
+        <section className="container testimonials-container">
                 <h2 className=" text-left text-justify" >Testimonials</h2>
                 <div class="text-holder right">
                     <div class="pg1-2-txt">

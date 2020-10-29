@@ -3,7 +3,7 @@
     .text-holder {
         width:50%;
     }
-    .container {
+    /* .container {
         display: block;
         width: 100vw;
         margin-right: auto;
@@ -13,7 +13,12 @@
         grid-template-columns: 1fr 1fr;
         -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
-        }
+    } */
+
+    .testimonials-container{
+        background-color: lightgrey;
+
+    }
     
     .left {
         float:left;

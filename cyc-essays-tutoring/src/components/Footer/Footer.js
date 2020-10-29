@@ -14,23 +14,24 @@ const Footer = () => {
                     <div className='col-3 ml-auto'>
                         Inner Stories
                     </div>
-                    <div className='col-3'>
+                    <div className='col-5'>
+                    Copyright © 2020 Dr. Dana Lebo
                     </div>
-                    <div className='col-3'>
+                    <div className='col-1'>
                     </div>
                 </Row>
                 <hr width='75%' />                
-                <Row className=''>
+                {/* <Row className=''>
                 <div className='col-3'>
                     </div>
                     <div className='col-3 ml-auto'>
-                        Copyright © 2020 Dr. Dana Lebo
+                        
                     </div>
                     <div className='col-3'>
                     </div>
                     <div className='col-3'>
                     </div>
-                </Row>
+                </Row> */}
             </footer>
         </>
     );
