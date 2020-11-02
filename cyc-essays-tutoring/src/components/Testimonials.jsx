@@ -2,7 +2,7 @@ import React from 'react'
 import './testimonials.css'
 import Pens from './testimonials1.png'
 import Books from './testimonials2.png'
-import { Row } from 'react-bootstrap'
+import { Row, Container } from 'react-bootstrap'
 import './testimonials.css'
 
 const Testimonials = () => {
