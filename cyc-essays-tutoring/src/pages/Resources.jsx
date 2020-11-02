@@ -23,22 +23,22 @@ description of what types of resources you are delivering here, maybe link a goo
                     <Row>
                         <Col>
                             <Row>
-                                <div class="tile">
-                                    <div class="icondiv">
-                                        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg" alt="Craig Creeger, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"></img>
+                                <div className="tile">
+                                    <div className="icondiv">
+                                        <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg" alt="Craig Creeger, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"></img>
                                     </div>
-                                    <div class="fileMain">
+                                    <div className="fileMain">
                                         <h4>File Title</h4>
                                         <p>File info: Lorem ipsum - short description of item </p> 
                                     </div>
                                 </div>
                             </Row>
                             <Row>
-                                <div class="tile">
-                                    <div class="icondiv">
-                                        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg" alt="Craig Creeger, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"></img>
+                                <div className="tile">
+                                    <div className="icondiv">
+                                        <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg" alt="Craig Creeger, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"></img>
                                     </div>
-                                    <div class="fileMain">
+                                    <div className="fileMain">
                                         <h4>File Title</h4>
                                         <p>File info: Lorem ipsum - short description of item </p> 
                                     </div>
@@ -47,22 +47,22 @@ description of what types of resources you are delivering here, maybe link a goo
                         </Col>
                         <Col>
                             <Row>
-                                <div class="tile">
-                                    <div class="icondiv">
-                                        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg" alt="Craig Creeger, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"></img>
+                                <div className="tile">
+                                    <div className="icondiv">
+                                        <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg" alt="Craig Creeger, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"></img>
                                     </div>
-                                    <div class="fileMain">
+                                    <div className="fileMain">
                                         <h4>File Title</h4>
                                         <p>File info: Lorem ipsum - short description of item </p> 
                                     </div>
                                 </div>
                             </Row>
                             <Row>
-                                <div class="tile">
-                                    <div class="icondiv">
-                                        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg" alt="Craig Creeger, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"></img>
+                                <div className="tile">
+                                    <div className="icondiv">
+                                        <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Pencil_icon_vector.svg" alt="Craig Creeger, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"></img>
                                     </div>
-                                    <div class="fileMain">
+                                    <div className="fileMain">
                                         <h4>File Title</h4>
                                         <p>File info: Lorem ipsum - short description of item </p> 
                                     </div>
