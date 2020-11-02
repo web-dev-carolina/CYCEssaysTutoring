@@ -8,7 +8,7 @@ const Contact = () => {
         <Row>
         <div className="container mb-5 row mr-auto ml-auto contact-form">
             <div className="col-xs-12 col-md-6">
-                <div class="text-center">
+                <div className="text-center">
                     <h2 className="section-heading">Contact</h2>
                     <p className="paragraph-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
@@ -17,7 +17,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="col-xs-12 col-md-6">
-                <div class="pg1-2-txt">
+                <div className="pg1-2-txt">
                 <Form>
                 <Form.Group controlId="formBasicName">
                         <Form.Label>Name</Form.Label>
