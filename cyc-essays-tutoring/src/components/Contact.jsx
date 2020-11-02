@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, Button } from 'react-bootstrap'
-import { Row } from 'react-bootstrap';
+import { Row, Container, Col } from 'react-bootstrap';
 import './contact.css'
 
 const Contact = () => {
@@ -40,7 +40,6 @@ const Contact = () => {
             </div>
         </div>
         </Row>
-
     )
 }
 
