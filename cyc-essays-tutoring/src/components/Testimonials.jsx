@@ -7,6 +7,7 @@ import './testimonials.css'
 
 const Testimonials = () => {
     return (
+        <Container>
         <div className="testimonials-container">
             <section className="container">
                 <h2 className=" text-left" >Testimonials</h2>
@@ -36,6 +37,7 @@ const Testimonials = () => {
                 {/* without this div contact moves up and covers second testimonial ?? */}
             </section>
         </div>
+        </Container>
 
     );
 }

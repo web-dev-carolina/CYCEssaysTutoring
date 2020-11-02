@@ -5,7 +5,7 @@ import './contact.css'
 
 const Contact = () => {
     return (
-        
+        <Container>
         <div className="container mb-5 row mr-auto ml-auto contact-form">
             <Row>
             <div className="col-xs-12 col-md-6">
@@ -41,6 +41,7 @@ const Contact = () => {
             </div>
             </Row>
         </div>
+        </Container>
         
     )
 }
