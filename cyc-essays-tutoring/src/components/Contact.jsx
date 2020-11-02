@@ -10,7 +10,7 @@ const Contact = () => {
             <Row>
             <div className="col-xs-12 col-md-6">
                 <div className="text-center">
-                    <h2 className="section-heading">Contact</h2>
+                    <h1 className="section-heading">Contact</h1>
                     <p className="paragraph-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
                     parturient montes, nascetur ridiculus
