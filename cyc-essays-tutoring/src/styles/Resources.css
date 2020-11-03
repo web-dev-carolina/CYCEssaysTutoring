@@ -4,10 +4,23 @@ html {
 }
 
 .resources-container {
-    background-color: #F8F8FF;
-    width: 100vh;
-    min-height: 100%;
-    padding: 0;
+    background-color: #F0F0F0;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.computer {
+    padding-left: 0px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    max-width: 300px;
+    max-height: 300px;
+    /* look into how to make responsive square*/
+}
+
+.resource-text {
+    padding: 15px 100px 0 0;
 }
 
 .fileMain {
@@ -43,4 +56,11 @@ p {
     line-height: 18px;
 
     color: #5D6970;
+}
+
+@media (min-width: 992px) {
+    .resources-container {
+        min-width: 100vw;
+        min-height: 100vh;
+    }
 }
