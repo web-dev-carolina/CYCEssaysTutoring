@@ -19,7 +19,9 @@ const Contact = ({handleSubmit}) => {
             </div>
             <div className="col-xs-12 col-md-6">
                 <div className="pg1-2-txt">
-                <Form onSubmit={handleSubmit}>
+                <Form 
+                //onSubmit={handleSubmit}
+                >
                 <Form.Group controlId="formBasicName">
                         <Form.Label>Name</Form.Label>
                         <Form.Control type="name" placeholder="Enter your name" />
