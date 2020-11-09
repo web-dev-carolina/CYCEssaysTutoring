@@ -6,9 +6,11 @@ https://medium.com/better-programming/a-simple-and-easy-contact-form-step-by-ste
 
 Follow Step 2, 3, 5, and 9: create an email for the real owner of the website.
 
-Run this:
+#Then, Run this:
 
 `$firebase functions:config:set gmail.email=”<youremail@gmail.com>” gmail.password=”<yourgmailpassword>”`
 
-Then this:
+#Then this:
+
+
 `firebase deploy`
