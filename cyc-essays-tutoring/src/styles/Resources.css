@@ -78,7 +78,6 @@ h4 {
 }
 
 p {
-    
     font-family: 'Roboto', sans-serif;
     font-weight: '400';
     font-style: normal;
@@ -105,4 +104,24 @@ p {
         min-width: 100vw;
         min-height: 100vh;
     }
+}
+
+/**********Source css*********/
+
+.source-container {
+    margin: 0 10% ;
+    padding: 5%;
+    background-color: rgb(180,180,180, 0.3);
+}
+
+.source-body p, li {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: '400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #5D6970;
 }
