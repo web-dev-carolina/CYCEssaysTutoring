@@ -1,22 +1,21 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../styles/Resources.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
-import '../styles/sat_cover.pdf';
+
 const Resources = () => {
     return (
         <div className="resources-container container">
             <div className="resource-heading resource-section container-fluid">
-            <Row className="title-header">
+            <Row className="title-header justify-content-center">
                 <div>
-                    <Col className="inline-x col-4">
-                    <div className="image-container">
+                    <Col className="inline-x col-md-4">
+                    <div className="image-container text-center">
                         <img className="computer" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Hands_typing_on_white_laptop_scene.svg" alt="File:Hands typing on white laptop scene.svg"></img>
                     </div>
                     </Col>
-                    <Col className="inline-x col-8">
+                    <Col className="inline-x col-md-8">
                         <div className="resource-text">
                             <h1 className="display-1 font-weight-normal">Resources</h1>
                         </div>
