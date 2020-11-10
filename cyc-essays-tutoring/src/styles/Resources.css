@@ -3,24 +3,68 @@ html {
     padding: 0;
 }
 
+.card-deck {
+    margin: 50px;
+    margin-left: 150px!important;
+    margin-right: 150px!important;
+}
+
+.resource-section {
+    padding: 50px;
+}
+
 .resources-container {
-    background-color: #F8F8FF;
-    width: 100vh;
-    min-height: 100%;
+    background-color: transparent;
+    height: 100%;
     padding: 0;
+    margin: 0 auto;
+    
 }
 
-.fileMain {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
+/* .resource-heading {
+    background-color: white;
+    height: 100%;
+    width: 100vw;
+    padding-left: 150px!important;
+    padding-right: 150px!important;
+    margin: 0 auto;
+    text-align: center;
+    !!!! Adysen can you check if we need any of these anymore? !!!! 
+} */
+
+.course-resources {
+    background-color: #F0F0F0;
 }
 
- .icon {
-    width: 100%;
-    max-width: 30px;
-    height: auto; 
- }
+.news-container {
+    background-color: white;
+}
+
+.resource-text {
+    padding-top: 50px;
+    margin-left: 5px!important;
+    padding-left: 0px!important;
+}
+
+.card {
+    min-width: 233px!important;
+    margin: 10px
+}
+
+.computer {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* .image-container {
+    margin-right: 5px!important;
+    padding-right: 0px!important;
+} */
 
 h4 {
     font-family: 'Roboto', sans-serif;
@@ -34,7 +78,6 @@ h4 {
 }
 
 p {
-    
     font-family: 'Roboto', sans-serif;
     font-weight: '400';
     font-style: normal;
@@ -43,4 +86,54 @@ p {
     line-height: 18px;
 
     color: #5D6970;
+}
+
+.inline-x {
+    display: inline-block!important;
+}
+
+/* .title-header {
+    margin: 0 auto!important;
+    text-align: inline-block;
+    padding-left: 10%!important;
+    padding-right: 10%!important;
+} */
+
+@media (min-width: 992px) {
+    .resources-container {
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+}
+
+/**********Source css*********/
+
+.source-container {
+    margin: 0 10% ;
+    padding: 5%;
+    background-color: rgb(180,180,180, 0.3);
+}
+
+.source-body p, li {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: '400';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #5D6970;
+}
+
+.card-img-top {
+    padding: 5px;
+    padding-top: 10px;
+    max-height: 320px;
+    max-width: 320px;
+    margin: auto;
+    width: 50%;
+}
+.article-link {
+    color: black;
 }
