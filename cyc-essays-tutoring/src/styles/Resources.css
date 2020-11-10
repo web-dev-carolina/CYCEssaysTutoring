@@ -3,37 +3,68 @@ html {
     padding: 0;
 }
 
-.resources-container {
-    background-color: #F0F0F0;
-    height: 100%;
-    padding: 20px;
-    margin: 0 auto;
+.card-deck {
+    margin: 50px;
+    margin-left: 150px!important;
+    margin-right: 150px!important;
 }
-.computer {
-    padding-left: 0px;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    max-width: 300px;
-    max-height: 300px;
-    /* look into how to make responsive square*/
+
+.resource-section {
+    padding: 50px;
+}
+
+.resources-container {
+    background-color: transparent;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    
+}
+
+.resource-heading {
+    background-color: white;
+    height: 100%;
+    width: 100vw;
+    padding-left: 150px!important;
+    padding-right: 150px!important;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.course-resources {
+    background-color: #F0F0F0;
+}
+
+.news-container {
+    background-color: white;
 }
 
 .resource-text {
-    padding: 15px 100px 0 0;
+    padding-top: 50px;
+    margin-left: 5px!important;
+    padding-left: 0px!important;
 }
 
-.fileMain {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
+.card {
+    min-width: 233px!important;
 }
 
- .icon {
-    width: 100%;
-    max-width: 30px;
-    height: auto; 
- }
+.computer {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 200px;
+    /* look into how to make responsive square*/
+}
+
+.image-container {
+    margin-right: 5px!important;
+    padding-right: 0px!important;
+}
 
 h4 {
     font-family: 'Roboto', sans-serif;
@@ -56,6 +87,17 @@ p {
     line-height: 18px;
 
     color: #5D6970;
+}
+
+.inline-x {
+    display: inline-block!important;
+}
+
+.title-header {
+    margin: 0 auto!important;
+    text-align: inline-block;
+    padding-left: 10%!important;
+    padding-right: 10%!important;
 }
 
 @media (min-width: 992px) {
