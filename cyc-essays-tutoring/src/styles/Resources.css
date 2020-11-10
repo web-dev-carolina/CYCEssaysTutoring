@@ -106,3 +106,7 @@ p {
         min-height: 100vh;
     }
 }
+
+.article-link {
+    color: black;
+}
