@@ -125,3 +125,9 @@ p {
 
     color: #5D6970;
 }
+
+.card-img-top {
+    padding: 5px;
+    padding-top: 10px;
+    max-height: 320px
+}
