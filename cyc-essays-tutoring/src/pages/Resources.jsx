@@ -101,10 +101,10 @@ const Resources = () => {
             <Row>
                 <div className="card-deck">
                     <div className="card shadow">
-                        <img className="card-img-top" src="..." alt="Card image cap" />
+                        <img className="card-img-top" src="../styles/resources-photos/almightyessay.jpg" alt="Laura Chouette from Unsplashed" />
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 className="card-title"><a href="https://www.nytimes.com/2011/01/09/education/09guidance-t.html" className="article-link">The Almighty Essay</a></h5>
+                            <p className="card-text">Trip Gabriel</p>
                         </div>
                         <div className="card-footer">
                         </div>
