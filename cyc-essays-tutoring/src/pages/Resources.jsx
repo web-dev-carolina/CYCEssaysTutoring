@@ -42,7 +42,7 @@ const Resources = () => {
                         <div className="card-body">
                             <h5 className="card-title">Course Material: Binder Inserts</h5>
                             <p className="card-text">Everything you need for the virtual workshop from example essay questions to detailed material. Please see the link below to view the pdf.</p>
-                            <a className="text-right" href="../styles/binder_inserts.pdf" target="_blank">View PDF...</a> 
+                            <a className="text-right" href="https://drive.google.com/file/d/1fLLwhCnbLHwI9Jlo69-j0-lcoLOWPnoi/view?usp=sharing" target="_blank">View PDF...</a> 
                         </div>
                         <div className="card-footer">
                         </div>
@@ -52,7 +52,7 @@ const Resources = () => {
                         <div className="card-body">
                             <h5 className="card-title">Virtual Workshop Overview</h5>
                             <p className="card-text">For the first time in history, most colleges have dropped the requirement for standardized test scores.  Due to the pandemic, they are turning instead to the personal essay as one of the biggest factors in college admission...</p>
-                            <a className="text-right" href="../styles/workshop_desc.pdf" target="_blank">Read more...</a> 
+                            <a className="text-right" href="https://drive.google.com/file/d/1D129pO3aVhQYBK4os4kg6tfvfQ1I9pZz/view?usp=sharing" target="_blank">Read more...</a> 
                         </div>
                         <div className="card-footer">
                         </div>
