@@ -6,7 +6,7 @@ import './About.css';
 const About = () => {
     return (
         <Row>
-        <div className="container mb-5 row mr-auto ml-auto" id="about">
+        <div className="container mb-5 row mr-auto ml-auto" id="aboutsection">
             <div className='col-xs-12 col-md-6 text-center'>
                 <h2 className='about-heading mb-3'>
                     About

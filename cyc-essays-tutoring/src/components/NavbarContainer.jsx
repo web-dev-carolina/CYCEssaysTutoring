@@ -14,10 +14,10 @@ const NavbarContainer = () => {
       <Navbar sticky="top" bg="light" variant="light" className="navbar">
         <Navbar.Brand className="mr-auto logo-nav">Inner Stories</Navbar.Brand>
         <Nav className="mx-auto">
-          <Nav.Link as={HLink} to="/#intro">Home</Nav.Link>
-          <Nav.Link as={HLink} to="/#about">About</Nav.Link>
-          <Nav.Link as={HLink} to="/#testimonials">Testimonials</Nav.Link>
-          <Nav.Link as={HLink} to="/#contact">Contact</Nav.Link>
+          <Nav.Link as={HLink} to="/#introsection">Home</Nav.Link>
+          <Nav.Link as={HLink} to="/#aboutsection">About</Nav.Link>
+          <Nav.Link as={HLink} to="/#testimonialssection">Testimonials</Nav.Link>
+          <Nav.Link as={HLink} to="/#contactsection">Contact</Nav.Link>
           <Nav.Link as={HLink} to="resources">Resources</Nav.Link>
           {/* links aren't navigating to the right page/section */}
         </Nav>

@@ -8,7 +8,7 @@ import './Intro.css';
 
 const Intro = () => {
     return (
-        <Jumbotron className="bg-container intro-jumbotron">
+        <Jumbotron id='introsection' className="bg-container intro-jumbotron">
 
             <div className="bg-image mt-0">
                 <div className="jumbotronText">
