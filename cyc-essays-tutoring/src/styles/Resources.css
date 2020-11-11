@@ -134,3 +134,12 @@ p {
     margin: auto;
     width: 50%;
 }
+
+.facemask {
+    padding: 5px;
+    padding-top: 10px;
+    height: 250px!important;
+    width: 250px!important;
+    margin: auto;
+    width: 50%;
+}
