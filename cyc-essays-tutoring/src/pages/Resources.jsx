@@ -100,19 +100,21 @@ const Resources = () => {
             <Row>
                 <div className="card-deck">
                     <div className="card shadow">
-                        <img className="card-img-top" src="../styles/resources-photos/almightyessay.jpg" alt="Laura Chouette from Unsplashed" />
+                    <img className="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Notebook_and_Pen_Flat_Icon_Vector.svg" alt="Notebook_and_Pen_Flat_Icon_Vector.svg" />
                         <div className="card-body">
-                        <h5 className="card-title"><a href="https://www.nytimes.com/2011/01/09/education/09guidance-t.html" className="article-link">The Almighty Essay</a></h5>
-                            <p className="card-text">Trip Gabriel</p>
+                        <h5 className="card-title">The Almighty Essay</h5>
+                            <p className="card-text">By Trip Gabriel: ON a freezing Saturday in February, my wife and I sat through a full-day introduction to college admissions for the parents of 11th graders.</p>
+                            <a className="text-right" href="https://www.nytimes.com/2011/01/09/education/09guidance-t.html">Read more...</a>
                         </div>
                         <div className="card-footer">
                         </div>
                     </div>
                     <div className="card shadow">
-                        <img className="card-img-top" src="..." alt="Card image cap" />
+                    <img className="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Noun_62811_-_Achieve.svg" alt="Achieve.svg" />
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 className="card-title">Making a Hard-Life Story Open a Door to College</h5>
+                            <p className="card-text">By SARA RIMER: Antoine Tate, 16, was sitting in a courtyard at Howard University in the heat of a July</p>
+                            <a className="text-right" href="https://www.nytimes.com/2007/07/27/education/27college.html">Read more...</a>
                         </div>
                         <div className="card-footer">
                         </div>
