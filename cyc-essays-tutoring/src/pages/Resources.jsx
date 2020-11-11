@@ -80,7 +80,8 @@ const Resources = () => {
                         <div className="card-body">
                             <h5 className="card-title">Writing the Essay: Sound Advice from an Expert</h5>
                             <p className="card-text">By Parke Muth, Assistant Dean of Admission, University of Virginia</p>
-                            <a className="text-right" href="..." target="_blank">Read more...</a> 
+                            <a className="text-right" href="https://drive.google.com/file/d/1R2DbMxonuT_ujHnTgwCGU8MAOxc25rbR/view?usp=sharing" target="_blank">Read more...</a> 
+                            {/* change href to new gdocs link once Dr.Lebo adds a pdf version of this publisher file. */}
                         </div>
                         <div className="card-footer">
                         </div>
@@ -90,7 +91,7 @@ const Resources = () => {
                         <div className="card-body">
                             <h5 className="card-title">Workshop Helps Students Write Winning College Applications</h5>
                             <p className="card-text">And Build Competency in a Much-Valued Leadership Skill</p>
-                            <a className="text-right" href="..." target="_blank">Read more...</a>
+                            <a className="text-right" href="https://drive.google.com/file/d/1w8TcqPFx6IqEsUbGLcrvICYP8M6iBiWA/view?usp=sharing" target="_blank">Read more...</a>
                         </div>
                         <div className="card-footer">
                         </div>
