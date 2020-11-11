@@ -57,10 +57,10 @@ const Landing = () => {
 
     return(
         <>
-            <Intro></Intro>
-            <About></About>
-            <Testimonials></Testimonials>
-            <Contact 
+            <Intro id='introsection'></Intro>
+            <About id='aboutsection'></About>
+            <Testimonials id='testimonialssection'></Testimonials>
+            <Contact id='contactsection'
             //handleSubmit={handleSubmit}
             ></Contact>
             <Footer></Footer>
