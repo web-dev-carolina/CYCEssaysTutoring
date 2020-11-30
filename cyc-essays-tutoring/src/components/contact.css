@@ -1,3 +1,7 @@
 .contact-form {
     padding-bottom: 10px !important;
 }
+
+#contactsection {
+    height: 100%;
+}

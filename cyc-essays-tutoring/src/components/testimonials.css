@@ -14,11 +14,12 @@
         -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
     } */
-
-    .testimonials-container{
+    
+    #testimonialssection {
+        height: 100%;
         background-color: RGB(240,240,240);
     }
-    
+
     .left {
         float:left;
     }

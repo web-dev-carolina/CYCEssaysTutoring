@@ -5,10 +5,11 @@ import './contact.css'
 
 const Contact = ({handleSubmit}) => {
     return (
-        <Container>
-        <div id='contactsection' className="container mb-5 row mr-auto ml-auto contact-form">
+    
+       
             <Row>
-            <div className="col-xs-12 col-md-6">
+            <div id='contactsection' className="container mb-5 row mr-auto ml-auto contact-form">
+            <Col className="col-xs-12 col-md-6">
                 <div className="text-center">
                     <h1 className="section-heading">Contact</h1>
                     <p className="paragraph-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -16,8 +17,8 @@ const Contact = ({handleSubmit}) => {
                     parturient montes, nascetur ridiculus
                         mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                 </div>
-            </div>
-            <div className="col-xs-12 col-md-6">
+            </Col>
+            <Col className="col-xs-12 col-md-6">
                 <div className="pg1-2-txt">
                 <Form 
                 //onSubmit={handleSubmit}
@@ -40,10 +41,11 @@ const Contact = ({handleSubmit}) => {
                 </Form>
                     
                 </div>
+            </Col>
             </div>
             </Row>
-        </div>
-        </Container>
+      
+     
         
     )
 }
