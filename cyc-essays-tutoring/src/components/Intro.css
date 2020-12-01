@@ -1,8 +1,11 @@
 .intro-button{
     margin-left: 3vw; 
     margin-right: 3vw;
+    margin-bottom: 3vw;
 }
 
-/* #introsection {
-    max-height: 30vh;
-} */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

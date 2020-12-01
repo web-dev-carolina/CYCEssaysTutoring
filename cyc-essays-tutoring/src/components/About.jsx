@@ -8,7 +8,7 @@ const About = () => {
         <Container id="aboutsection" style={{marginBottom: '80 px'}}>
             <Row>
                 {/* <div className="container mb-5 row mr-auto ml-auto"> */}
-                <Col xs={12} md={6}>
+                <Col xs={{order: 1}} md={6}>
                     <h2 className='about-heading mb-3'>
                         About
                     </h2>

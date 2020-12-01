@@ -26,7 +26,8 @@
 .jumbotron {
   background-color:white !important;
   width:100vw !important;
-  height:100vh !important;
+  height: fit-content !important;
+  padding-top: 2vw !important;
 }
 
 .App-link {
