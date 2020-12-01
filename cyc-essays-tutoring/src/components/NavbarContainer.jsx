@@ -1,17 +1,17 @@
 import React from 'react';
-import { Navbar, Nav, Button, } from 'react-bootstrap';
+import { Navbar, Nav, Button, Image, } from 'react-bootstrap';
 import { HashLink as HLink } from 'react-router-hash-link';
 import { Route, Switch} from 'react-router-dom';
 import Landing from '../pages/Landing.jsx';
 import Registration from '../pages/Registration.jsx';
 import Resources from '../pages/Resources.jsx';
 
-
 const NavbarContainer = () => {
-
+  let logo = require('../assets/cutTheWriteStory.png');
   return (
     <>
       <Navbar sticky="top" bg="light" variant="light" className="navbar">
+        <Image src={logo} height='50px'/>
         <Navbar.Brand className="mr-auto logo-nav">Inner Stories</Navbar.Brand>
         <Nav className="mx-auto">
           <Nav.Link as={HLink} to="/#introsection">Home</Nav.Link>
