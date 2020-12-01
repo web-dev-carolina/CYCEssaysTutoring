@@ -5,20 +5,18 @@ import './Footer.css'
 const Footer = () => {
 
     return (
-        <>
         <Container id="footer">
             {/* <footer className="footer ml-auto mr-auto"> */}
-                <Row>
-                    <Col>
-                        The Write Story
+            <Row>
+                <Col>
+                    The Write Story
                     </Col>
-                    <Col>
-                        Copyright © 2020 Dr. Dana Lebo
+                <Col>
+                    Copyright © 2020 Dr. Dana Lebo
                     </Col>
-                </Row>
+            </Row>
             {/* </footer> */}
-            </Container>
-        </>
+        </Container>
     );
 }
 
