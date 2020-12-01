@@ -5,7 +5,7 @@ import './contact.css'
 
 const Contact = ({ handleSubmit }) => {
     return (
-        <Container id='contactsection' className="mb-5 mr-auto ml-auto contact-form">
+        <Container id='contactsection' className="mb-5 mr-auto ml-auto contact-form section-container">
             <Row>
                 <Col xs={12} md={6}>
                     <div className="text-center">

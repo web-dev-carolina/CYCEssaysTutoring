@@ -2,6 +2,10 @@
     width: 50%;
 }
 
+#aboutsection {
+    height: fit-content !important;
+}
+
 .container {
     display: block;
     width: 100vw;
@@ -29,4 +33,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#powerofpen {
+    height: 30vh;
 }

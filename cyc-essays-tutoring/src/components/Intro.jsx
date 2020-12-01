@@ -11,7 +11,7 @@ const Intro = () => {
         <Container fluid id="introsection">
             <Row>
                 <Jumbotron className="bg-container intro-jumbotron">
-                    <div className="bg-image mt-0 p-0 jumbotronText center">
+                    <div className="bg-image m-0 p-0 jumbotronText center">
                         <Col className='m-auto text-center' md={6}>
                             <h1 className='jumbo-title p-3 m-auto text-center'>Introduce Your Product</h1>
                             <div className='p-2 m-auto text-center'>

@@ -5,7 +5,7 @@ import './About.css';
 
 const About = () => {
     return (
-        <Container id="aboutsection" style={{marginBottom: '80 px'}}>
+        <Container id="aboutsection" className="section-container">
             <Row>
                 {/* <div className="container mb-5 row mr-auto ml-auto"> */}
                 <Col xs={{order: 1}} md={6}>
@@ -20,7 +20,7 @@ const About = () => {
                     </div>
                 </Col>
                 <Col xs={12} md={6}>
-                    <Image src={powerofpen} alt="power-of-pen" className="rounded" height="80px" />
+                    <Image src={powerofpen} alt="power-of-pen" id="powerofpen" className="rounded d-block mx-auto img-responsive" />
                 </Col>
                 {/* </div> */}
             </Row>

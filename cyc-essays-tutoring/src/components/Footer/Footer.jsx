@@ -6,7 +6,6 @@ const Footer = () => {
 
     return (
         <Container id="footer">
-            {/* <footer className="footer ml-auto mr-auto"> */}
             <Row>
                 <Col>
                     The Write Story
@@ -15,7 +14,6 @@ const Footer = () => {
                     Copyright © 2020 Dr. Dana Lebo
                     </Col>
             </Row>
-            {/* </footer> */}
         </Container>
     );
 }

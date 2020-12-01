@@ -54,7 +54,7 @@ const Landing = () => {
     // };
 
     return(
-        <div className="full-div">
+        <div id="full-div">
             <Intro id='introsection'/>
             <About id='aboutsection'/>
             <Testimonials id='testimonialssection'/>
