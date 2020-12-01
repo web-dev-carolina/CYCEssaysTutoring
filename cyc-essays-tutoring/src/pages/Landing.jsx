@@ -3,14 +3,11 @@ import About from '../components/About';
 import Intro from '../components/Intro';
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
-import Footer from '../components/Footer/Footer';
+import Footer from '../components/Footer/Footer.jsx';
 //import { Axios, db } from '../firebase/firebaseConfig';
 
 
 const Landing = () => {
-
-    
-
     // const sendEmail = (name, email, message) => {
     //     const formData = {
     //         name: name,
@@ -60,13 +57,11 @@ const Landing = () => {
             <Intro id='introsection'></Intro>
             <About id='aboutsection'></About>
             <Testimonials id='testimonialssection'></Testimonials>
-            <Contact id='contactsection'
-            //handleSubmit={handleSubmit}
+            <Contact id='contactsection' //handleSubmit={handleSubmit}
             ></Contact>
             <Footer></Footer>
         </>
     );
-
 }
 
 export default Landing;

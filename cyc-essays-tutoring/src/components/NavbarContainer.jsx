@@ -7,12 +7,11 @@ import Registration from '../pages/Registration.jsx';
 import Resources from '../pages/Resources.jsx';
 
 const NavbarContainer = () => {
-  let logo = require('../assets/cutTheWriteStory.png');
   return (
     <>
       <Navbar sticky="top" bg="light" variant="light" className="navbar">
-        <Image src={logo} height='50px'/>
-        <Navbar.Brand className="mr-auto logo-nav">Inner Stories</Navbar.Brand>
+        <Image src={require('../assets/cutTheWriteStory.png')} height='50px'/>
+        <Navbar.Brand className="mr-auto logo-nav">The Write Story</Navbar.Brand>
         <Nav className="mx-auto">
           <Nav.Link as={HLink} to="/#introsection">Home</Nav.Link>
           <Nav.Link as={HLink} to="/#aboutsection">About</Nav.Link>

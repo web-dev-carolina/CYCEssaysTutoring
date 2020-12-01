@@ -8,6 +8,8 @@ const Contact = ({handleSubmit}) => {
         <Container>
         <div id='contactsection' className="container mb-5 row mr-auto ml-auto contact-form">
             <Row>
+                <Col></Col>
+                <Col>
             <div className="col-xs-12 col-md-6">
                 <div className="text-center">
                     <h1 className="section-heading">Contact</h1>
@@ -41,6 +43,7 @@ const Contact = ({handleSubmit}) => {
                     
                 </div>
             </div>
+            </Col>
             </Row>
         </div>
         </Container>
