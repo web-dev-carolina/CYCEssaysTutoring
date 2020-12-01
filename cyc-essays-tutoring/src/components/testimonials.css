@@ -35,7 +35,7 @@
     
     }
     .img {
-        width: 300px;
+        width: 100px;
         border-radius: 50%;
         display: block;
         margin-left: auto;
@@ -44,4 +44,8 @@
 
     .space { 
         margin-top: 150px; 
+    }
+
+    .section-heading {
+        font-size: 140%;
     }

@@ -11,7 +11,7 @@ const NavbarContainer = () => {
     <>
       <Navbar sticky="top" bg="light" variant="light" className="navbar">
         <Image src={require('../assets/cutTheWriteStory.png')} height='50px'/>
-        <Navbar.Brand className="mr-auto logo-nav">The Write Story</Navbar.Brand>
+        <Navbar.Brand className="mr-auto logo-nav"> &ensp; The Write Story</Navbar.Brand>
         <Nav className="mx-auto">
           <Nav.Link as={HLink} to="/#introsection">Home</Nav.Link>
           <Nav.Link as={HLink} to="/#aboutsection">About</Nav.Link>

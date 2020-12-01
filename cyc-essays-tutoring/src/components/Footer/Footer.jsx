@@ -6,27 +6,17 @@ const Footer = () => {
 
     return (
         <>
-        <Container>
-            <footer className=" footer ml-auto mr-auto">
-            
-                <Row className='p-2'>
+        <Container id="footer">
+            {/* <footer className="footer ml-auto mr-auto"> */}
+                <Row>
                     <Col>
-                    <div className='col-3'>
-                    </div>
-                    <div className='col-3 ml-auto'>
-                        Inner Stories
-                    </div>
+                        The Write Story
                     </Col>
                     <Col>
-                    <div className='col-5'>
-                    Copyright © 2020 Dr. Dana Lebo
-                    </div>
-                    <div className='col-1'>
-                    </div>
+                        Copyright © 2020 Dr. Dana Lebo
                     </Col>
                 </Row>
-                <hr width='75%' />
-            </footer>
+            {/* </footer> */}
             </Container>
         </>
     );
