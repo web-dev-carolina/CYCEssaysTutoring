@@ -3,15 +3,12 @@ import About from '../components/About';
 import Intro from '../components/Intro';
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
-import Footer from '../components/Footer/Footer';
-import {Col} from 'react-bootstrap';
+import Footer from '../components/Footer/Footer.jsx';
+import './Landing.css';
 //import { Axios, db } from '../firebase/firebaseConfig';
 
 
 const Landing = () => {
-
-    
-
     // const sendEmail = (name, email, message) => {
     //     const formData = {
     //         name: name,
@@ -57,17 +54,15 @@ const Landing = () => {
     // };
 
     return(
-        <Col>
-            <Intro id='introsection'></Intro>
-            <About id='aboutsection'></About>
-            <Testimonials id='testimonialssection'></Testimonials>
-            <Contact id='contactsection'
-            //handleSubmit={handleSubmit}
-            ></Contact>
-            <Footer></Footer>
-        </Col>
+        <div id="full-div">
+            <Intro id='introsection'/>
+            <About id='aboutsection'/>
+            <Testimonials id='testimonialssection'/>
+            <Contact id='contactsection' //handleSubmit={handleSubmit}
+            />
+            <Footer/>
+        </div>
     );
-
 }
 
 export default Landing;

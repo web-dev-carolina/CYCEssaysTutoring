@@ -23,10 +23,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 .jumbotron {
   background-color:white !important;
   width:100vw !important;
-  height:100vh !important;
+  height: 90vh !important;
+  padding-top: 2vw !important;
+  padding-bottom: 0vw !important;
+  margin-bottom: 0 !important;
 }
 
 .App-link {
@@ -56,6 +60,12 @@ grid-template-columns: 1fr 1fr;
 -ms-grid-rows: auto auto;
 grid-template-rows: auto auto;
 } */
+
+.section-container {
+  height: fit-content;
+  padding: 4vw 3vw;
+}
+
 .motto-wrap {
   width: 80%;
   margin-right: auto;
@@ -123,7 +133,6 @@ grid-template-rows: auto auto;
 .img {
   border:0;
   vertical-align: middle;
- 
 }
 
 @keyframes App-logo-spin {
@@ -135,6 +144,23 @@ grid-template-rows: auto auto;
   }
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#full-div{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+}
 
-
+#footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

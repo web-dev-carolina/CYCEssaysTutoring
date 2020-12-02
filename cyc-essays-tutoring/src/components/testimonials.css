@@ -1,48 +1,42 @@
-    
+.text-holder {
+    width: 50%;
+}
 
-    .text-holder {
-        width:50%;
-    }
-    /* .container {
-        display: block;
-        width: 100vw;
-        margin-right: auto;
-        margin-left: auto;
-        grid-auto-columns: 1fr;
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-    } */
-    
-    #testimonialssection {
-        height: 100%;
-        background-color: RGB(240,240,240);
-    }
+#testimonialssection {
+    display: block;
+    width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    background-color: rgb(240, 240, 240);
+    height: fit-content !important;
+}
 
-    .left {
-        float:left;
-    }
-    
-    .right {
-        float: right;
-    }
-    
-    .pg1-2-txt {
-        width:80%;
-        /* text-align: center; */
-        margin:0 auto;
-        padding:1em;
-    
-    }
-    .img {
-        width: 300px;
-        border-radius: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.left {
+    float: left;
+}
 
-    .space { 
-        margin-top: 150px; 
-    }
+.right {
+    float: right;
+}
+
+.pg1-2-txt {
+    width: 80%;
+    /* text-align: center; */
+}
+
+.img {
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-heading {
+    font-size: 140%;
+}
