@@ -36,7 +36,7 @@ const Testimonials = () => {
             <br></br>
             {/* without this div contact moves up and covers second testimonial ?? */}
         </Container>
-        </Row>
+        
 
     );
 }
