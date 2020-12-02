@@ -5,8 +5,17 @@ html {
 
 .card-deck {
     margin: 50px;
-    margin-left: 150px!important;
-    margin-right: 150px!important;
+    margin-left: 10%!important;
+    margin-right: 10%!important;
+    width: 100vw;
+}
+@media (max-width: 375px) {
+    .card-deck {
+        /* max-width: 220px!important; */
+        width: 100%!important;
+        margin-left: 2%!important;
+        margin-right: 2%!important;
+    }
 }
 
 .resource-section {
@@ -47,7 +56,7 @@ html {
 }
 
 .card {
-    min-width: 233px!important;
+    min-width: 200px!important;
     margin: 10px
 }
 
@@ -99,12 +108,13 @@ p {
     padding-right: 10%!important;
 } */
 
-@media (min-width: 992px) {
+@media (min-width: 233px) {
     .resources-container {
-        min-width: 100vw;
-        min-height: 100vh;
+        min-width: 100vw!important;
+        min-height: 100vh!important;
     }
 }
+
 
 /**********Source css*********/
 
@@ -143,3 +153,13 @@ p {
     margin: auto;
     width: 50%;
 }
+
+.responsive {
+    width:100%!important;
+}
+
+@media (max-width: 480px) {
+    .display-4 {
+      font-size: 3rem!important;
+    }
+  }
