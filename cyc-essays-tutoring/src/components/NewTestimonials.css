@@ -1,0 +1,93 @@
+.testimonials {
+    position: relative;
+    min-height: calc(100vh + 10px);
+    text-align: center;
+    color: #707070;
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    padding: 50px 0 0 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-weight: 700;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    background-color: #F0F0F0;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.content {    
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 6% 0% 6%;
+    height: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-item {
+    height: 350px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+.carousel-indicators {
+    filter: invert(100%);
+}
+
+.carousel-caption h3 {
+    color: #707070;
+    font-size: 1.2rem;
+}
+
+.carousel {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+@media screen and (min-width: 960px){
+    .title {
+        margin-bottom: 130px;
+    }
+
+    .content {
+        font-size: 1.4rem;
+        padding: 0 20% 10% 20%;
+        line-height: 2.2rem;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .title {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        font-size: .9rem;
+    }
+    .carousel-caption h3 {
+        font-size: .9rem;
+    }
+    
+}

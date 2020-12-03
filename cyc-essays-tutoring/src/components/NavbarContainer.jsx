@@ -17,7 +17,7 @@ const NavbarContainer = () => {
           <Nav className="mx-auto">
             <Nav.Link as={HLink} to="/#introsection">Home</Nav.Link>
             <Nav.Link as={HLink} to="/#aboutsection">About</Nav.Link>
-            <Nav.Link as={HLink} to="/#testimonialssection">Testimonials</Nav.Link>
+            <Nav.Link as={HLink} to="/#newTestimonialSection">Testimonials</Nav.Link>
             <Nav.Link as={HLink} to="/#contactsection">Contact</Nav.Link>
             <Nav.Link as={HLink} to="resources">Resources</Nav.Link>
             {/* links aren't navigating to the right page/section */}
