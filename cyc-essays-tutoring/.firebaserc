@@ -1,5 +1,6 @@
 {
   "projects": {
+    "staging": "cycessays",
     "default": "cycessays"
   }
 }
