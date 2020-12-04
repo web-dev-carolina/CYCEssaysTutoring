@@ -7,12 +7,17 @@ const Contact = ({ handleSubmit }) => {
     return (
         <Container id='contactsection' className="mb-5 mr-auto ml-auto contact-form section-container">
             <Row>
+                <Col>
+                    <div id="contactTitle">
+                        <h1>Contact</h1>
+                    </div>
+                </Col>
+            </Row>
+            <Row>
                 <Col xs={12} md={6}>
-                    <div className="text-center">
-                        <h1 className="section-heading">Contact</h1>
-                        <p className="paragraph-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculusmus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div className="">
+                        <h5 className="contact-caption">Please leave your name, email, and any comments or concerns. We will get back to
+you as soon as possible!</h5>
                     </div>
                 </Col>
                 <Col xs className="pg1-2-txt">

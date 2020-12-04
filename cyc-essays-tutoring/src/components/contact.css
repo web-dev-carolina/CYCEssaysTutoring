@@ -2,3 +2,16 @@
     padding-bottom: 10px !important;
     height: fit-content !important;
 }
+
+#contactTitle {
+    font-weight: 700;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-caption {
+    font-weight: normal !important;
+}

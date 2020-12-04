@@ -27,8 +27,17 @@
     margin-right: auto;
 }
 
+#aboutTitle {
+    font-weight: 700;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    text-align: center;
+}
+
 #powerofpen {
-    height: 30vh;
+    height: 25vh;
 }
 
 .text-holder {
@@ -41,7 +50,7 @@
 }
 
 .img {
-    width: 100px;
+    width: 125px;
     border-radius: 50%;
     display: block;
     margin-left: auto;
@@ -50,4 +59,13 @@
 
 .section-heading {
     font-size: 140%;
+    margin: 8px 0;
+}
+
+.aboutHeadline {
+    margin: 10px 0;
+}
+
+.aboutList {
+    color: black !important;
 }
