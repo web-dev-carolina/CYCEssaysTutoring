@@ -17,7 +17,7 @@ const Contact = ({ handleSubmit }) => {
                 </Col>
                 <Col xs className="pg1-2-txt">
                     <Form
-                    //onSubmit={handleSubmit}
+                    onSubmit={handleSubmit}
                     >
                         <Form.Group controlId="formBasicName">
                             <Form.Label>Name</Form.Label>
