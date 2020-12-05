@@ -9,6 +9,12 @@ html {
     margin-right: 10%!important;
     width: 100vw;
 }
+
+.card-text {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 16px!important;
+}
+
 @media (max-width: 375px) {
     .card-deck {
         /* max-width: 220px!important; */
@@ -30,17 +36,6 @@ html {
     
 }
 
-/* .resource-heading {
-    background-color: white;
-    height: 100%;
-    width: 100vw;
-    padding-left: 150px!important;
-    padding-right: 150px!important;
-    margin: 0 auto;
-    text-align: center;
-    !!!! Adysen can you check if we need any of these anymore? !!!! 
-} */
-
 .course-resources {
     background-color: #F0F0F0;
 }
@@ -56,7 +51,7 @@ html {
 }
 
 .card {
-    min-width: 200px!important;
+    min-width: 250px!important;
     margin: 10px
 }
 
@@ -70,12 +65,7 @@ html {
     max-height: 200px;
 }
 
-/* .image-container {
-    margin-right: 5px!important;
-    padding-right: 0px!important;
-} */
-
-h4 {
+/* h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: '400';
     font-style: normal;
@@ -84,10 +74,20 @@ h4 {
     line-height: 26px;
     
     color: #091133;
+} */
+
+h5 {
+    font-family: 'Ibarra Real, serif';
+    font-weight: '400';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px!important;
+    line-height: 26px;
+    color: #091133!important;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ibarra Real, serif';
     font-weight: '400';
     font-style: normal;
     font-weight: normal;
@@ -122,18 +122,6 @@ p {
     margin: 0 10% ;
     padding: 5%;
     background-color: rgb(180,180,180, 0.3);
-}
-
-.source-body p, li {
-
-    font-family: 'Roboto', sans-serif;
-    font-weight: '400';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-
-    color: #5D6970;
 }
 
 .card-img-top {

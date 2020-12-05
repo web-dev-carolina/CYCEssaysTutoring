@@ -58,7 +58,7 @@ const Landing = () => {
         <div id="full-div">
             <Intro id='introsection'/>
             <About id='aboutsection'/>
-            <Testimonials id='testimonialssection'/>
+            {/* <Testimonials id='testimonialssection'/> */}
             <NewTestimonials id="newTestimonialSection"/>
             <Contact id='contactsection' //handleSubmit={handleSubmit}
             />

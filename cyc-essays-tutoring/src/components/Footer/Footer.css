@@ -2,4 +2,7 @@
     background-color: rgba(209, 197, 197, 0.877);
     height: fit-content !important;
     text-align: center;
+    font-family: 'Ibarra Real, serif';
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

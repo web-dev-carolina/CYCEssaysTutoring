@@ -2,3 +2,17 @@
     padding-bottom: 10px !important;
     height: fit-content !important;
 }
+
+.form-container {
+    border: 1px solid;
+    border-color: #84CEEB;
+    border-radius: 15px;
+    padding: 40px;
+    min-width: 320px!important;
+    width: 90%;
+}
+
+.contact-container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

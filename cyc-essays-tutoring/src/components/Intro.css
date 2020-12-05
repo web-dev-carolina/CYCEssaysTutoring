@@ -3,3 +3,25 @@
     margin-right: 3vw;
     margin-bottom: 3vw;
 }
+
+.poiret {
+    font-family: 'Poiret One', cursive;
+}
+
+.ibarra {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 80px;
+}
+
+.ibarra-title {
+    font-family: 'Ibarra Real, serif';
+    font-size: 50px;
+}
+
+.khand {
+    font-family: 'Khand', sans-serif;
+}
+
+.enriq {
+    font-family: 'Enriqueta', serif;
+}

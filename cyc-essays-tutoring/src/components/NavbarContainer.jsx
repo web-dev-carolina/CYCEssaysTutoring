@@ -9,9 +9,9 @@ import Resources from '../pages/Resources.jsx';
 const NavbarContainer = () => {
   return (
     <>
-      <Navbar sticky="top" bg="light" variant="light" className="navbar" expand="md" collapseOnSelect>
+      <Navbar sticky="top" bg="light" variant="light" className="navbar enriq" expand="md" collapseOnSelect>
         <Image src={require('../assets/cutTheWriteStory.png')} height='50px' />
-        <Navbar.Brand className="mr-auto logo-nav"> &ensp; The Write Story</Navbar.Brand>
+        <Navbar.Brand className="mr-auto logo-nav ibarra"> &ensp; The Write Story</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">

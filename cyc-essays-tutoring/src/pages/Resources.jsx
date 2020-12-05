@@ -17,19 +17,19 @@ const Resources = () => {
                     </Col>
                     <Col className="d-md-inline-block col-md-8 col-sm-4">
                         <div className="resource-text d-none d-sm-block">
-                            <h1 className="d-none d-sm-block display-1 font-weight-normal">Resources</h1>
+                            <h1 className="d-none d-sm-block display-1 font-weight-normal ibarra">Resources</h1>
                             {/* <h3 className="d-md-none display-3 font-weight-normal">Resources</h3> */}
                         </div>
                         <div className="resource-text d-sm-block">
                             {/* <h1 className="d-none d-md-block display-1 font-weight-normal">Resources</h1> */}
-                            <h3 className="d-sm-none display-4 font-weight-normal">Resources</h3>
+                            <h3 className="d-sm-none display-4 font-weight-normal ibarra">Resources</h3>
                         </div>
                     </Col>
                 </div>
             </Row>
             </div>
             <div className="course-resources resource-section container-fluid">
-            <h1 className="display-4 text-center font-weight-light">Course Resources</h1>
+            <h1 className="display-4 text-center font-weight-light enriq">Course Resources</h1>
             <Row>
                 <div className="card-deck">
                     <div className="card shadow" onClick="handleFirstResource">
@@ -68,7 +68,7 @@ const Resources = () => {
             </div>
             <Col>
             <div className="news-container resource-section container-fluid">
-            <h1 className="display-4 text-center font-weight-light">News Articles</h1>
+            <h1 className="display-4 text-center font-weight-light enriq">News Articles</h1>
             <Row>
                 <div className="card-deck">
                     <div className="card shadow">
@@ -102,11 +102,6 @@ const Resources = () => {
                         <div className="card-footer">
                         </div>
                     </div>
-                </div>
-
-            </Row>
-            <Row>
-                <div className="card-deck">
                     <div className="card shadow">
                         <img className="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Noun_62811_-_Achieve.svg" alt="Achieve.svg" />
                         <div className="card-body">
@@ -130,7 +125,6 @@ const Resources = () => {
                         </div>
                     </div>
                 </div>
-
             </Row>
             </div>
             </Col>

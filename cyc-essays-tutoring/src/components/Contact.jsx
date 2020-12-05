@@ -8,15 +8,15 @@ const Contact = ({ handleSubmit }) => {
         <Container id='contactsection' className="mb-5 mr-auto ml-auto contact-form section-container">
             <Row>
                 <Col xs={12} md={6}>
-                    <div className="text-center">
-                        <h1 className="section-heading">Contact</h1>
-                        <p className="paragraph-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <div className="text-center contact-container">
+                        <h1 className="ibarra-title">Contact</h1>
+                        <div className="paragraph-light enriq">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculusmus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        parturient montes, nascetur ridiculusmus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</div>
                     </div>
                 </Col>
-                <Col xs className="pg1-2-txt">
-                    <Form
+                <Col xs className="pg1-2-txt d-flex align-items-center justify-content-center">
+                    <Form className="enriq form-container shadow"
                     //onSubmit={handleSubmit}
                     >
                         <Form.Group controlId="formBasicName">

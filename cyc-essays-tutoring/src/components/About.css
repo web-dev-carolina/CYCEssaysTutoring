@@ -4,7 +4,16 @@
 
 #aboutsection {
     height: fit-content !important;
+    position: relative;
+    /* min-height: calc(100vh + 10px); */
+    text-align: center;
+    width: 100%;
 }
+
+#wrapper-row {
+    min-height: 500px;
+}
+
 
 .container {
     display: block;
@@ -28,7 +37,7 @@
 }
 
 .img {
-    width: 300px;
+    max-width: 300px;
     border-radius: 50%;
     display: block;
     margin-left: auto;
