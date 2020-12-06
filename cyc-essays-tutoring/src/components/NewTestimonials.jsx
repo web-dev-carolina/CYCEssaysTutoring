@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './NewTestimonials.css';
 import Carousel from 'react-bootstrap/Carousel'
 
@@ -13,27 +12,27 @@ function Testimonials() {
                 <div className="content">
                     <Carousel>
                         <Carousel.Item>
-                        The Carolina Homelessness Prevention Initiative has been a wonderful organization to work with. They provide a great service for the 
-                        community and are extremely professional in how they run their organization. We are grateful for the impact that they have made in our community 
-                        and are looking forward to continuing our partnership.
-                        <Carousel.Caption>
-                                <h3></h3>
+                            “My daughter finished the workshop with a well-written essay and had lots of fun in the process. She was
+                            fortunate to get immediate positive feedback when she submitted it with her application to a competitive
+                            program. The director of the program complimented her essay during the interview. I highly recommend
+                            The Write Workshop.”
+                            <Carousel.Caption>
+                                <h3 className="carousel-caption"><em>Parent of Write Workshop Graduate</em></h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        CHPI is a phenomenal organization. They provide a niche service and have mastered their craft. 
-                        We appreciate everything they have done for us and are excited for what the future of our relationship will look like.
-                        <Carousel.Caption>
-                                <h3></h3>
+                            I had never been exposed to writing techniques like contrast and peak experience. I don’t think teachers
+                            at school could even teach them as well as Dr. Lebo did! I learned that any type of writing work should
+                            have a great hook and how to maintain their attention. I learned too much to put onto paper.
+                            <Carousel.Caption>
+                                <h3 className="carousel-caption"><em>K.M., Write Workshop Graduate</em></h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        The impact that the Carolina Homelessness Prevention Initiative has had on the local Chapel Hill community has been astonishing. 
-                        We have seen the diversion rate drop significantly since they were established, and the trend is likely to continue. 
-                        CHPI has also played a large role in helping mitigate the negative effects of COVID-19 in homelessness and have provided 
-                        much needed support for this community during these tough times.
-                        <Carousel.Caption>
-                                <h3></h3>
+                            I learned about my own personal voice and how I can incorporate myself creatively and personally into
+                            anything that I write. I found things that I can take with me for writing in the future.
+                            <Carousel.Caption>
+                            <h3 className="carousel-caption"><em>K.L., Write Workshop Graduate</em></h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>

@@ -41,7 +41,7 @@
   margin-right: auto;
 }
 .bg-image {
-  background-image: url('book.svg');
+  background-image: url('./assets/fadeTheWriteStory.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,17 +49,6 @@
   width: 100%;
   height: 100%;
 }
-/* .container {
-display: block;
-width: 100vw;
-margin-right: auto;
-margin-left: auto;
-grid-auto-columns: 1fr;
--ms-grid-columns: 1fr 1fr;
-grid-template-columns: 1fr 1fr;
--ms-grid-rows: auto auto;
-grid-template-rows: auto auto;
-} */
 
 .section-container {
   height: fit-content;
