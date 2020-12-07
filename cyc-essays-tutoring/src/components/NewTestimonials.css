@@ -11,7 +11,7 @@
 .wrapper {
     position: relative;
     width: 100%;
-    padding: 50px 0 0 0;
+    padding: 0px 0 0 0;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -21,20 +21,24 @@
 
 .title {
     font-weight: 700;
-    margin-top: 0;
+    margin: 0 0 !important;
     text-transform: uppercase;
     font-size: 2.5rem;
-    padding: 50px 0 50px 0;
+    background-color: #F0F0F0;
+    padding: 20px 0;
     text-align: center;
+    color: black;
 }
 
 .content {    
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 1rem;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0 6% 0% 6%!important;
-    height: 100%;
+    padding: 0 6% 0% 6%;
+    height: auto;
+    background-color: #F0F0F0;
+
 }
 
 .carousel-control-next,
@@ -43,9 +47,7 @@
 }
 
 .carousel-item {
-    /* height: 350px; */
-    /* height: 300px; */
-    height: 40vh;
+    height: 400px;
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -57,7 +59,7 @@
 
 .carousel-caption h3 {
     color: #707070;
-    font-size: 1.2rem;
+    font-size: 80% !important;
 }
 
 .carousel {
@@ -66,7 +68,7 @@
 }
 
 .carousel-card {
-    width: 85%;
+    /* width: 85%; */
     margin: 0 auto!important;
     border-radius: 15px!important;
     border-color: transparent!important;    

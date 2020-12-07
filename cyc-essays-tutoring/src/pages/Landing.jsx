@@ -1,16 +1,16 @@
 import React from 'react';
 import About from '../components/About';
 import Intro from '../components/Intro';
-import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer/Footer.jsx';
 import NewTestimonials from '../components/NewTestimonials'
 import './Landing.css';
-//import { Axios, db } from '../firebase/firebaseConfig';
+import { Axios, db } from '../firebase/firebaseConfig';
 
 
 const Landing = () => {
     // const sendEmail = (name, email, message) => {
+    //     debugger;
     //     const formData = {
     //         name: name,
     //         email: email,
@@ -21,7 +21,7 @@ const Landing = () => {
     //         return
     //     } else {
     //     Axios.post(
-    //         'https://us-central1-cycemails-23180.cloudfunctions.net/submit',
+    //         'https://us-central1-cycessays.cloudfunctions.net/submit',
     //         formData
     //       )
     //         .then(res => {
@@ -58,10 +58,9 @@ const Landing = () => {
         <div id="full-div">
             <Intro id='introsection'/>
             <About id='aboutsection'/>
-            {/* <Testimonials id='testimonialssection'/> */}
             <NewTestimonials id="newTestimonialSection"/>
-            <Contact id='contactsection' //handleSubmit={handleSubmit}
-            />
+            {/* <Contact id='contactsection' handleSubmit={handleSubmit}
+            /> */}
             <Footer/>
         </div>
     );

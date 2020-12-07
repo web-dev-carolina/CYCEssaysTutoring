@@ -7,17 +7,22 @@ const Contact = ({ handleSubmit }) => {
     return (
         <Container id='contactsection' className="mb-5 mr-auto ml-auto contact-form section-container">
             <Row>
-                <Col xs={12} md={6}>
-                    <div className="text-center contact-container">
-                        <h1 className="ibarra-title">Contact</h1>
-                        <div className="paragraph-light enriq">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculusmus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</div>
+                <Col>
+                    <div id="contactTitle">
+                        <h1>Contact</h1>
                     </div>
                 </Col>
-                <Col xs className="pg1-2-txt d-flex align-items-center justify-content-center">
-                    <Form className="enriq form-container shadow"
-                    //onSubmit={handleSubmit}
+            </Row>
+            <Row>
+                <Col xs={12} md={6}>
+                    <div className="">
+                        <h5 className="contact-caption enriq">Please leave your name, email, and any comments or concerns. We will get back to
+you as soon as possible!</h5>
+                    </div>
+                </Col>
+                <Col xs className="pg1-2-txt">
+                    <Form
+                    onSubmit={handleSubmit}
                     >
                         <Form.Group controlId="formBasicName">
                             <Form.Label>Name</Form.Label>
