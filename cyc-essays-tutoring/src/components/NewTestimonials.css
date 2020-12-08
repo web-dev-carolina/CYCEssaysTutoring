@@ -2,10 +2,8 @@
     position: relative;
     min-height: calc(100vh + 10px);
     text-align: center;
-    color: #707070;
+    /* color: #707070; */
     width: 100%;
-    /* background-color: #F0F0F0; */
-    background-color: #c4adee28; 
 }
 
 .wrapper {
@@ -16,6 +14,9 @@
     margin-left: auto;
     margin-right: auto;
     min-height: calc(100vh + 10px);
+    /* background-color: #072d54; */
+    background-color: rgba(128, 128, 128, 0.24);
+
 
 }
 
@@ -28,6 +29,7 @@
     padding: 20px 0;
     text-align: center;
     color: black;
+    font-family: 'Ibarra Real Nova', serif;
 }
 
 .content {    
@@ -35,9 +37,10 @@
     font-size: 1rem;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0 6% 0% 6%;
+    padding: 6% 6% 0% 6%;
     height: auto;
-    background-color: #F0F0F0;
+    font-family: 'Exo 2', sans-serif;
+    /* background-color: #F0F0F0; */
 
 }
 
@@ -58,7 +61,7 @@
 
 
 .carousel-caption h3 {
-    color: #707070;
+    color: #357be0;
     font-size: 80% !important;
 }
 
@@ -68,7 +71,6 @@
 }
 
 .carousel-card {
-    /* width: 85%; */
     margin: 0 auto!important;
     border-radius: 15px!important;
     border-color: transparent!important;    
@@ -81,7 +83,7 @@
     } */
 
     .content {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding: 0 20% 10% 20%;
         line-height: 2.2rem;
         margin-top: 5vh;

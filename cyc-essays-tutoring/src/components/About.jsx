@@ -4,70 +4,38 @@ import Pens from './testimonials1.png';
 import Books from './testimonials2.png';
 import { Col, Row, Container, Image } from 'react-bootstrap';
 import './About.css';
+import bg2 from './../assets/latest.gif';
 
 const About = () => {
     return (
-        <Container id="aboutsection" className="section-container">
-            <Row>
-                <Col>
-                    <div id="aboutTitle">
-                        <h1 className="ibarra-title">About</h1>
-                    </div>
-                </Col>
-            </Row>
-            <br></br>
-            <Row className="aboutHeadline">
-                <Col xs={{ order: 1 }} md={9}>
-                    <div className="aboutStory enriq">
-                        Writing the college application essay can be a meaningful and motivating opportunity for self-
-                        knowledge, personal growth, and the development of your effectiveness as a writer. Dr. Lebo’s
-                        knowledge of the psychology of writing, combined with your own creativity and work in small groups, will enable you to explore and express the unique voice within you. <br></br>Creating a powerful personal essay is the primary goal of <em>The Write Workshop</em>. In this process, you will:
-                    </div>
-                </Col>
-                <Col xs={12} md={3}>
-                    <Image src={powerofpen} alt="power-of-pen" id="powerofpen" className="rounded d-block mx-auto img-responsive" />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <ul className="aboutList">
-                        <li>
-                            Identify the specific college essay questions that you need to answer.
-                        </li>
-                        <li>
-                            Learn what distinguishes a successful essay from an unsuccessful one.
-                        </li>
-                        <li>
-                            Explore your passions, values, and commitments and how they can be expressed through writing.
-                        </li>
-                    </ul>
-                </Col>
-                <Col>
-                    <Image src={Pens} alt="pens" className="img" />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Image src={Books} alt="books" className="img" />
-                </Col>
-                <Col>
-                    <ul className="aboutList">
-                        <li>
-                        “Try out” your ideas and ways to connect with your readers.
-                        </li>
-                        <li>
-                        Plan and draft your essay(s); receive extensive feedback on your work.
-                        </li>
-                        <li>
-                        Practice the critical art of revision under expert guidance.
-                        </li>
-                        <li>
-                        Learn about the “flow” of fresh, creative writing and the art of “showing” your experience.
-                        </li>
-                    </ul>
-                </Col>
-            </Row>
-        </Container>
+        <div id="aboutsection" className="section-container">
+            <br/>
+            <Col>
+                <Row>
+                    <Col className="logo-col col-4 d-none d-lg-block">
+                        <img className="logo-img" src={bg2} alt='video/gif' />
+                    </Col>
+                    <Col>
+                        <div className='enriq p-2 m-auto text-center'>
+                            <h2 className="ibarra-title">Meet Dr.Lebo!</h2>
+                            <hr/>
+                            <img className="logo-img d-lg-none" src={bg2} alt='video/gif' />
+                            <p className="ibarra">
+                            <em>The Write Workshop</em> is facilitated by Dr. Dana Lebo, a leadership
+                            development coach in Chapel Hill, NC. She first established this successful essay-writing
+                            program in the greater Princeton, N.J., area in 1999, drawing on her experience as a
+                            licensed psychologist, leadership and communications skills development consultant,
+                            and former teacher of undergraduate writing at Rutgers University.  She has taught
+                            hundreds of successful college application essay-writing workshops to rising high school
+                            sophomores, juniors, and seniors seeking acceptance by the nation’s top colleges and
+                            universities. Dr. Lebo earned her Ph.D. from Columbia University and M.A. and B.A. from
+                            Georgetown University.
+                            </p>
+                        </div> 
+                    </Col>
+                </Row>
+            </Col>
+        </div>
     );
 }
 

@@ -24,30 +24,46 @@
   color: white;
 }
 
-.jumbotron {
-  background-color:white !important;
-  width:100vw !important;
-  height: 90vh !important;
-  padding-top: 2vw !important;
-  padding-bottom: 0vw !important;
-  margin-bottom: 0 !important;
-}
-
 .App-link {
   color: hsl(193, 95%, 68%);
 }
-.bg-container {
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .bg-image {
-  background-image: url('./assets/fadeTheWriteStory.png');
+  background-image: url('./assets/woodbook.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
   height: 100%;
+   /* parallax */
+   /* background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; */
+  
+}
+
+hr {
+  background-color: #ffda33f6!important;
+}
+
+.bg-image2 {
+  background-image: url('./book.svg');
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%; */
+height: auto;
+width: 100vw;
+
+/* parallax */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .section-container {

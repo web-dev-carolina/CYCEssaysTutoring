@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap'
 import { Row, Container, Col } from 'react-bootstrap';
 import './contact.css'
@@ -6,22 +7,27 @@ import './contact.css'
 const Contact = ({ handleSubmit }) => {
     return (
         <Container id='contactsection' className="mb-5 mr-auto ml-auto contact-form section-container">
+            
             <Row>
                 <Col>
                     <div id="contactTitle">
-                        <h1>Contact</h1>
+                        <hr/>
+                            <h1>Contact</h1>
+                        <hr/>
                     </div>
                 </Col>
             </Row>
+          
             <Row>
-                <Col xs={12} md={6}>
-                    <div className="">
+                <Col className="contact-info" xs={12} md={6}>
+                    <div>
                         <h5 className="contact-caption enriq">Please leave your name, email, and any comments or concerns. We will get back to
 you as soon as possible!</h5>
+                        <h3>To attend a workshop, please <Link to="/registration">schedule</Link> here.</h3>
                     </div>
                 </Col>
                 <Col xs className="pg1-2-txt">
-                    <Form
+                    <Form className="form-container shadow enriq"
                     onSubmit={handleSubmit}
                     >
                         <Form.Group controlId="formBasicName">

@@ -5,16 +5,21 @@
 #aboutsection {
     height: fit-content !important;
     position: relative;
-    /* min-height: calc(100vh + 10px); */
+    min-height: calc(100vh + 10px);
     text-align: center;
     width: 100%;
+    display: flex!important;
+    align-items: center!important;
+}
+
+.section-container {
+    margin-left: 10px!important;
+    margin-right: 10px!important;
 }
 
 #wrapper-row {
     min-height: 500px;
 }
-
-
 .container {
     display: block;
     width: 100vw;
@@ -29,7 +34,8 @@
 }
 
 .img {
-    width: 300px;
+    max-width: 300px;
+    width: 125px;
     border-radius: 50%;
     display: block;
     margin-left: auto;
@@ -58,15 +64,6 @@
     /* text-align: center; */
 }
 
-.img {
-    max-width: 300px;
-    width: 125px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .section-heading {
     font-size: 140%;
     margin: 8px 0;
@@ -79,3 +76,43 @@
 .aboutList {
     color: black !important;
 }
+
+.logo-col {
+    margin-top: 50px;
+    display: flex!important;
+    align-items: center!important;
+    width: 100%;
+}
+
+
+/***Workshop css****/
+
+.listCard {
+    height: auto;
+    /* background-color: #e0bb16f6!important; */
+    background-color: #ffd92df6!important;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.eighty-wide {
+    width: 80%;
+}
+
+.workshopcontainer {
+    height: auto;
+}
+
+#workshopsection {
+    background-color: #2f2e30;
+    width: 100vw;
+    margin: 0 auto!important;
+    min-height: 100vh;
+}
+
+.font-white {
+    color: white;
+}
+
+  .sm-icon {
+    margin-left: 5px!important;
+  }

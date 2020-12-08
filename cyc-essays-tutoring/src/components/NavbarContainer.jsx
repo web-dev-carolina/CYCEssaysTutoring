@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, Button, Image, } from 'react-bootstrap';
+import { Navbar, Nav, Button, Image, NavDropdown } from 'react-bootstrap';
 import { HashLink as HLink } from 'react-router-hash-link';
 import { Route, Switch } from 'react-router-dom';
 import Landing from '../pages/Landing.jsx';
@@ -17,6 +17,7 @@ const NavbarContainer = () => {
           <Nav className="mx-auto">
             <Nav.Link as={HLink} to="/#introsection">Home</Nav.Link>
             <Nav.Link as={HLink} to="/#aboutsection">About</Nav.Link>
+            <Nav.Link as={HLink} to="/#workshopsection">Workshop Info</Nav.Link>
             <Nav.Link as={HLink} to="/#newTestimonialSection">Testimonials</Nav.Link>
             <Nav.Link as={HLink} to="/#contactsection">Contact</Nav.Link>
             <Nav.Link as={HLink} to="resources">Resources</Nav.Link>

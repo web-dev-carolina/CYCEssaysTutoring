@@ -4,24 +4,98 @@
     margin-bottom: 3vw;
 }
 
-.poiret {
-    font-family: 'Poiret One', cursive;
+/* #myVideo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw!important;
+    z-index: -1;
+} */
+.jumbotron {
+    /* background-color:white !important; */
+    background-color:transparent !important;
+    width:100vw !important;
+    height: 90vh !important;
+    padding-top: 2vw !important;
+    padding-bottom: 0vw !important;
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+.jumbotron .container {
+    z-index: 2;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    margin: 2vw!important;
+}
+
+
+
+.bg-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#myVideo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left:0!important;
+    width:98vw!important;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.exo {
+    font-family: 'Exo 2', sans-serif;
 }
 
 .ibarra {
     font-family: 'Ibarra Real Nova', serif;
-    font-size: 80px;
+    font-size: 30px;
+    line-height: normal;
+}
+
+.ibarra-small {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 10px;
 }
 
 .ibarra-title {
     font-family: 'Ibarra Real, serif';
     font-size: 50px;
-}
-
-.khand {
-    font-family: 'Khand', sans-serif;
+    color: rgb(13, 13, 31);
 }
 
 .enriq {
     font-family: 'Enriqueta', serif;
+}
+
+.enriq-small {
+    font-family: 'Enriqueta', serif;
+    font-size: 10px;
+}
+
+@media (max-width: 900px) {
+    .logo-img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+
+.intro-container2 .ibarra {
+    font-size: 14px!important;
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.jumbotron .row .col {
+    min-width: 400px;   
 }

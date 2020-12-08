@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../styles/Resources.css';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 
+
 const Resources = () => {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+      
+    
     return (
         <div className="resources-container container">
             <div className="resource-heading resource-section container-fluid">
