@@ -24,7 +24,7 @@ const Resources = () => {
                     </Col>
                     <Col className="d-md-inline-block col-md-8 col-sm-4">
                         <div className="resource-text d-none d-sm-block">
-                            <h1 className="d-none d-sm-block display-1 font-weight-normal ibarra">Resources</h1>
+                            <h1 className="d-none d-sm-block display-1 font-weight-normal ibarra-resources">Resources</h1>
                             {/* <h3 className="d-md-none display-3 font-weight-normal">Resources</h3> */}
                         </div>
                         <div className="resource-text d-sm-block">

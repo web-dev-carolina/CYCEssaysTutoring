@@ -24,6 +24,11 @@ html {
     }
 }
 
+.ibarra-resources {
+    font-family: 'Ibarra Real Nova', serif;
+    line-height: normal;
+}
+
 .resource-section {
     padding: 50px;
 }
