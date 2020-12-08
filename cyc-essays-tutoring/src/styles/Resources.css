@@ -95,6 +95,12 @@ p {
         min-width: 100vw!important;
         min-height: 100vh!important;
     }
+    .card {
+        min-width: 190px!important;
+    }
+    .card-title {
+        font-size: 1.5rem!important;
+    }
 }
 
 
