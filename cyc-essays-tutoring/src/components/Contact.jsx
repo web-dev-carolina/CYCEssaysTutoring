@@ -17,7 +17,7 @@ const Contact = ({ handleSubmit }) => {
             </Row>
           
             <Row>
-                <Col className="contact-info" xs={12} md={6}>
+                <Col className="contact-info" md={12} lg={6}>
                     <div>
                         <h5 className="contact-caption enriq">Please leave your name, email, and any comments or concerns. We will get back to
 you as soon as possible!</h5>

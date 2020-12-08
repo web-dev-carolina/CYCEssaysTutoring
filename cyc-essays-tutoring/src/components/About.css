@@ -16,9 +16,9 @@
 #wrapper-row {
     min-height: 500px;
 }
-.container {
+#aboutsection.container {
     display: block;
-    width: 100vw;
+    /* width: 100vw; */
     height: 50vh;
     margin-right: auto;
     margin-left: auto;
@@ -74,9 +74,9 @@
 }
 
 .logo-col {
-    margin-top: 50px;
-    display: flex!important;
-    align-items: center!important;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
     width: 100%;
 }
 
