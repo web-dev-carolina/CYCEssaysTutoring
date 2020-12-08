@@ -8,7 +8,7 @@ import bg2 from './../assets/latest.gif';
 
 const About = () => {
     return (
-        <div id="aboutsection" className="section-container">
+        <Container id="aboutsection" className="section-container">
             <br/>
             <Col>
                 <Row>
@@ -35,7 +35,7 @@ const About = () => {
                     </Col>
                 </Row>
             </Col>
-        </div>
+        </Container>
     );
 }
 

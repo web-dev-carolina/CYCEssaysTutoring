@@ -87,9 +87,17 @@
     }
 }
 
-
-.intro-container2 .ibarra {
-    font-size: 14px!important;
+@media (max-width: 420px) {
+    .logo-img {
+        width: 50vw!important;
+        margin: 0 auto;
+    }
+    .ibarra {
+        font-size: 1rem!important;
+    }
+    .jumbotron .row .col {
+        min-width: 200px!important;
+    }
 }
 
 .logo-img {

@@ -7,15 +7,15 @@ function Testimonials() {
         <div id="newTestimonialSection" className="testimonials">
             <div className="wrapper">
                 <div className="title">
-                <hr/>
-                    <h1 className="">Testimonials</h1>
                     <hr/>
-                </div>
+                        <h1 className="title">Testimonials</h1>
+                        <hr/>
+                    </div>
                 <div className="content">
                     <div className="carousel-card shadow card">
                     <Carousel>
                         <Carousel.Item>
-                        <div className="d-flex h-100 align-items-center justify-content-center khand">
+                        <div className="d-flex h-100 align-items-center justify-content-center">
                             “My daughter finished the workshop with a well-written essay and had lots of fun in the process. She was
                             fortunate to get immediate positive feedback when she submitted it with her application to a competitive
                             program. The director of the program complimented her essay during the interview. I highly recommend

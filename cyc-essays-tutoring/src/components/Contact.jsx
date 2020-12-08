@@ -9,12 +9,10 @@ const Contact = ({ handleSubmit }) => {
         <Container id='contactsection' className="mb-5 mr-auto ml-auto contact-form section-container">
             
             <Row>
-                <Col>
-                    <div id="contactTitle">
-                        <hr/>
-                            <h1>Contact</h1>
-                        <hr/>
-                    </div>
+                <Col>                
+                    <hr/>
+                        <h1 id="contactTitle">Contact</h1>
+                    <hr/>
                 </Col>
             </Row>
           
@@ -23,7 +21,7 @@ const Contact = ({ handleSubmit }) => {
                     <div>
                         <h5 className="contact-caption enriq">Please leave your name, email, and any comments or concerns. We will get back to
 you as soon as possible!</h5>
-                        <h3>To attend a workshop, please <Link to="/registration">schedule</Link> here.</h3>
+                        <h3 className="contact-caption"><b>To attend a workshop, please <Link to="/registration">schedule</Link> here.</b></h3>
                     </div>
                 </Col>
                 <Col xs className="pg1-2-txt">

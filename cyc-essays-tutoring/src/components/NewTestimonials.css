@@ -97,14 +97,21 @@
 @media only screen and (max-width: 480px){
     .title {
         width: 100%;
+        font-size: 2rem!important;
     }
-
     .content {
         width: 100%;
         font-size: .9rem;
+        padding-bottom: 5%
+
     }
     .carousel-caption h3 {
         font-size: .9rem;
     }
-    
+    .carousel-item {
+        height: 400px;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 0.7rem;
+    }
 }

@@ -28,8 +28,26 @@
 
 #contactsection {
     background-color: transparent!important;
+    min-height: 100vh!important;
+    height: auto;
 }
 
 .contact-info {
     margin-bottom: 3vh;
+}
+
+
+@media (max-width: 420px) {
+    .form-container {
+        border: 1px solid;
+        border-color: #0377a5;
+        border-radius: 15px;
+        padding: 40px;
+        min-width: 200px!important;
+        width: 90%;
+    }
+    .contact-caption {
+        font-size: 1rem!important;
+    }
+    
 }
