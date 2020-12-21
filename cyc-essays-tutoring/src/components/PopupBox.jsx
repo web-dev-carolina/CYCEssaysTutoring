@@ -235,8 +235,12 @@ export default class PopupBox extends React.Component {
                                             endDate + " " + endingTime[0] + ":" + endingTime[1] + endDon + "."} />
                                 </Form.Group>
                                 <div style={{ textAlign: 'center' }}>
-                                    <Button variant="secondary" type="submit" className="center btn">
-                                    Sign Up
+                                    <Button 
+                                        variant="secondary" 
+                                        type="submit" 
+                                        className="center btn"
+                                        style={{ backgroundColor: color, border: 'none', }}>
+                                        Sign Up
                                     </Button>
                                 </div>
                             </Form>
