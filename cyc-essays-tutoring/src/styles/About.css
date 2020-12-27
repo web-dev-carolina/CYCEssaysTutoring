@@ -16,6 +16,7 @@
 #wrapper-row {
     min-height: 500px;
 }
+
 #aboutsection.container {
     display: block;
     /* width: 100vw; */
@@ -79,36 +80,3 @@
     align-items: center;
     width: 100%;
 }
-
-
-/***Workshop css****/
-
-.listCard {
-    height: auto;
-    /* background-color: #e0bb16f6!important; */
-    background-color: #ffd92df6!important;
-    font-family: 'Exo 2', sans-serif;
-}
-
-.eighty-wide {
-    width: 80%;
-}
-
-.workshopcontainer {
-    height: auto;
-}
-
-#workshopsection {
-    background-color: #2f2e30;
-    width: 100vw;
-    margin: 0 auto!important;
-    min-height: 100vh;
-}
-
-.font-white {
-    color: white;
-}
-
-  .sm-icon {
-    margin-left: 5px!important;
-  }

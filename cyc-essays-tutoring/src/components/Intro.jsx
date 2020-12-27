@@ -3,7 +3,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button'
 import { Col, Row, Container } from 'react-bootstrap';
 import { HashLink as HLink } from 'react-router-hash-link';
-import './Intro.css';
+import '../styles/Intro.css';
 import logo from './../assets/titleimg.png';
 import bg2 from './../assets/latest.gif';
 

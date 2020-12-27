@@ -3,9 +3,9 @@ import About from '../components/About';
 import Workshop from '../components/Workshop';
 import Intro from '../components/Intro';
 import Contact from '../components/Contact'
-import Footer from '../components/Footer/Footer.jsx';
-import NewTestimonials from '../components/NewTestimonials'
-import './Landing.css';
+import Footer from '../components/Footer.jsx';
+import NewTestimonials from '../components/Testimonials.jsx';
+import '../styles/Landing.css';
 import { Axios, db } from '../firebase/firebaseConfig';
 
 

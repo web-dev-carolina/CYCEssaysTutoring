@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap'
 import { Row, Container, Col } from 'react-bootstrap';
-import './contact.css'
+import '../styles/Contact.css'
 
 const Contact = ({ handleSubmit }) => {
     return (
@@ -11,7 +11,7 @@ const Contact = ({ handleSubmit }) => {
             <Row>
                 <Col>                
                     <hr/>
-                        <h1 id="contactTitle">Contact</h1>
+                        <h1 id="" className="ibarra-title text-center">Contact</h1>
                     <hr/>
                 </Col>
             </Row>
@@ -21,7 +21,8 @@ const Contact = ({ handleSubmit }) => {
                     <div>
                         <h5 className="contact-caption enriq">Please leave your name, email, and any comments or concerns. We will get back to
 you as soon as possible!</h5>
-                        <h3 className="contact-caption"><b>To attend a workshop, please <Link to="/registration">schedule</Link> here.</b></h3>
+<br></br>
+                        <h3 className="contact-caption enriq"><b>To attend a workshop, please <Link to="/registration">schedule</Link> here.</b></h3>
                     </div>
                 </Col>
                 <Col xs className="pg1-2-txt">
