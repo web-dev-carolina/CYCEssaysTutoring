@@ -21,7 +21,7 @@ const Landing = () => {
         if (name === "" || email === "" || message === "") {
             return
         } else {
-        Axios.post(
+          Axios.post(
             'https://us-central1-cycessays.cloudfunctions.net/submit',
             formData
           )
