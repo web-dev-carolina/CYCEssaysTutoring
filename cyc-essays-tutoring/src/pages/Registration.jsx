@@ -36,7 +36,7 @@ export default function Registration() {
         });
         setEvents(unorgEvents);
     });
-  }, []);
+  });
 
   //Popup to send email to register
   let registerHandler = () => {

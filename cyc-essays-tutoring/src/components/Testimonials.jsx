@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewTestimonials.css';
+import '../styles/Testimonials.css';
 import Carousel from 'react-bootstrap/Carousel'
 
 function Testimonials() {
@@ -8,7 +8,7 @@ function Testimonials() {
             <div className="wrapper">
                 <div className="title">
                     <hr/>
-                        <h1 className="title">Testimonials</h1>
+                        <h1 className="ibarra-title">Testimonials</h1>
                         <hr/>
                     </div>
                 <div className="content">

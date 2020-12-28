@@ -1,9 +1,6 @@
 import React from 'react';
-import powerofpen from './powerofpen.svg';
-import Pens from './testimonials1.png';
-import Books from './testimonials2.png';
 import { Col, Row, Container, Image } from 'react-bootstrap';
-import './About.css';
+import '../styles/About.css';
 import bg2 from './../assets/latest.gif';
 
 const About = () => {

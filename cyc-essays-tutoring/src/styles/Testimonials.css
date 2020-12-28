@@ -23,7 +23,7 @@
 .title {
     font-weight: 700;
     margin: 0 0 !important;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 2.5rem;
     background-color: #F0F0F0;
     padding: 20px 0;
