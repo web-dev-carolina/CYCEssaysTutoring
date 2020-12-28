@@ -4,7 +4,7 @@ import { Form, Button } from 'react-bootstrap'
 import { Col } from 'react-bootstrap';
 import { Axios, db } from '../firebase/firebaseConfig';
 import Tooltip from '@material-ui/core/Tooltip';
-import './contact.css';
+import '../styles/Contact.css';
 
 const customStyles = {
     content : {
@@ -195,6 +195,8 @@ export default class PopupBox extends React.Component {
                             <button onClick={this.handleCloseModal} style={{ border: 'none', float: 'right', backgroundColor: 'Transparent', fontSize: '100%' }}>✕</button>
                         </Tooltip>
                         <div style={{ textAlign: 'center' }}><strong style={{ fontSize: '25px' }}>{event.title}</strong></div><br />
+                        {(event.vac == 'FULL') ? (
+                        <><div style={{ textAlign: 'center'}}><string style={{fontSize:'20px'}}>{event.vac}</string></div><br /></> ) : (<div></div>) }
                         <div style={{ textAlign: 'center' }}>{startDate} {startingTime[0]}:{startingTime[1]}{startDon} - {endDate} {endingTime[0]}:{endingTime[1]}{endDon}</div><br />
                         <div style={{ fontSize: '18px', textAlign: 'center' }}>{event.description}</div><br />
                         <div style={{ textAlign: 'center' }}>

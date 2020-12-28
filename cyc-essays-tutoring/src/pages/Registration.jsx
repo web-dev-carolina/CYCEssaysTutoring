@@ -30,13 +30,14 @@ export default function Registration() {
                             oneE.endHour, oneE.endMin),
               color: oneE.color,
               description: oneE.desc,
+              vac: oneE.vac
             }
           );
           id++;
         });
         setEvents(unorgEvents);
     });
-  });
+  }, []);
 
   //Popup to send email to register
   let registerHandler = () => {
