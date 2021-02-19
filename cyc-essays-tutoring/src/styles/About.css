@@ -3,7 +3,6 @@
 }
 
 #aboutsection {
-    align: left;
     height: fit-content !important;
     position: relative;
     min-height: calc(100vh + 10px);
