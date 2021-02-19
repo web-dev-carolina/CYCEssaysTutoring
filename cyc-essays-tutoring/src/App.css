@@ -29,15 +29,15 @@
 }
 
 .bg-image {
-  background-image: url('./assets/woodbook.jpg');
+  background-image: url('./assets/notebookbg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
   height: 100%;
-   /* parallax */
-   /* background-attachment: fixed;
+   /* parallax
+   background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover; */
