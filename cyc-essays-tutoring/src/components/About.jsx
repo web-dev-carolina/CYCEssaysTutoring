@@ -5,7 +5,7 @@ import bg2 from './../assets/latest.gif';
 
 const About = () => {
     return (
-        <Container id="aboutsection" className="section-container" align="left">
+        <Container id="aboutsection" className="section-container">
             <br/>
             <Col>
                 <Row>
