@@ -22,7 +22,7 @@
     /* width: 100vw; */
     height: 50vh;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 0;
     grid-auto-columns: 1fr;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;

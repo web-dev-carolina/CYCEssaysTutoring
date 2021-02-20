@@ -14,7 +14,7 @@ const About = () => {
                     </Col>
                     <Col>
                         <div className='enriq p-2 m-auto text-center'>
-                            <h2 className="ibarra-title">Meet Dr.Lebo!</h2>
+                            <h2 className="ibarra-title">Meet Dr. Lebo!</h2>
                             <hr/>
                             <img className="logo-img d-lg-none" src={bg2} alt='video/gif' />
                             <p className="ibarra">
