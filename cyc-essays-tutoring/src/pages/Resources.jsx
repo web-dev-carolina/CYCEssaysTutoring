@@ -50,16 +50,6 @@ const Resources = () => {
                         </div>
                     </div>
                     <div className="card shadow">
-                        <img className="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/0/02/201807_book_B.svg" alt="File:201807 book B.svg" />
-                        <div className="card-body">
-                            <h5 className="card-title">Course Material: Binder Inserts</h5>
-                            <p className="card-text">Everything you need for the virtual workshop from example essay questions to detailed material. Please see the link below to view the pdf.</p>
-                            <a className="text-right" href="https://drive.google.com/file/d/1fLLwhCnbLHwI9Jlo69-j0-lcoLOWPnoi/view?usp=sharing" target="_blank" rel="noopener noreferrer">View PDF...</a> 
-                        </div>
-                        <div className="card-footer">
-                        </div>
-                    </div>
-                    <div className="card shadow">
                         <img className="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Magnifying_glass_icon_mgx2.svg" alt="File:Magnifying glass icon mgx2.svg" />
                         <div className="card-body">
                             <h5 className="card-title">Virtual Workshop Overview</h5>
