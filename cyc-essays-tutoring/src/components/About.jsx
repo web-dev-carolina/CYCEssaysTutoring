@@ -5,7 +5,7 @@ import bg2 from './../assets/latest.gif';
 
 const About = () => {
     return (
-        <Container id="aboutsection" className="section-container" align="left">
+        <Container id="aboutsection" className="section-container">
             <br/>
             <Col>
                 <Row>
@@ -17,7 +17,7 @@ const About = () => {
                             <h2 className="ibarra-title">Meet Dr. Lebo!</h2>
                             <hr/>
                             <img className="logo-img d-lg-none" src={bg2} alt='video/gif' />
-                            <p className="ibarra">
+                            <p className="ibarra" align="left">
                             <em>The Write Workshop</em> is facilitated by Dr. Dana Lebo, a leadership
                             development coach in Chapel Hill, NC. She first established this successful essay-writing
                             program in the greater Princeton, N.J., area in 1999, drawing on her experience as a

@@ -6,7 +6,7 @@
     height: fit-content !important;
     position: relative;
     min-height: calc(100vh + 10px);
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: flex!important;
     align-items: center!important;
@@ -22,7 +22,7 @@
     /* width: 100vw; */
     height: 50vh;
     margin-right: auto;
-    margin-left: 0;
+    margin-left: auto;
     grid-auto-columns: 1fr;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
