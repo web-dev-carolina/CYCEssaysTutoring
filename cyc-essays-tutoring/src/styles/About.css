@@ -6,7 +6,7 @@
     height: fit-content !important;
     position: relative;
     min-height: calc(100vh + 10px);
-    text-align: left;
+    text-align: center;
     width: 100%;
     display: flex!important;
     align-items: center!important;
