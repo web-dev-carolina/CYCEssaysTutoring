@@ -5,6 +5,7 @@ import { Col } from 'react-bootstrap';
 import { Axios, db } from '../firebase/firebaseConfig';
 import Tooltip from '@material-ui/core/Tooltip';
 import '../styles/Contact.css';
+import PayPalButton from './PayPalButton';
 
 const customStyles = {
     content : {
@@ -166,8 +167,36 @@ export default class PopupBox extends React.Component {
         }
         endDate += "/" + ending[2] + "/" + ending[3];
 
+        function initPayPalButton() {
+            window.paypal.Buttons({
+              style: {
+                shape: 'rect',
+                color: 'gold',
+                layout: 'vertical',
+                label: 'paypal',
+                
+              },
+      
+              createOrder: function(data, actions) {
+                return actions.order.create({
+                  purchase_units: [{"description":"tutoring","amount":{"currency_code":"USD","value":150}}]
+                });
+              },
+      
+              onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                  alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                });
+              },
+      
+              onError: function(err) {
+                console.log(err);
+              }
+            }).render('#paypal-button-container');
+          }
+
         return (
-        <div>
+        <div>           
             <button style={{ width: '100%', border: 'none', backgroundColor: 'Transparent' }} onClick={this.handleOpenModal}>{event.title}</button>
             <ReactModal 
                 isOpen={this.state.showModal}
@@ -210,6 +239,9 @@ export default class PopupBox extends React.Component {
                     </div>)
                     :
                     (<div>
+
+                        <PayPalButton />                    
+
                         <Tooltip title="Close">
                             <button onClick={this.handleCloseModal} style={{ border: 'none', float: 'right', backgroundColor: 'Transparent' }}>✕</button>
                         </Tooltip>
