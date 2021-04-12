@@ -240,45 +240,13 @@ export default class PopupBox extends React.Component {
                     :
                     (<div>
 
-                        <PayPalButton />                    
+                                           
 
                         <Tooltip title="Close">
                             <button onClick={this.handleCloseModal} style={{ border: 'none', float: 'right', backgroundColor: 'Transparent' }}>✕</button>
                         </Tooltip>
-                        <div style={{ textAlign: 'center' }}><strong style={{fontSize: '25px'}}>Register for {event.title}</strong></div><br />
-                        <Col xs className="pg1-2-txt">
-                            <Form
-                            onSubmit={this.handleSendEmail}
-                            >
-                                <Form.Group controlId="formBasicName">
-                                    <Form.Label>Name</Form.Label>
-                                    <Form.Control type="name" placeholder="Enter your name" />
-                                </Form.Group>
-                                <Form.Group controlId="formBasicEmail">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                </Form.Group>
-                                <Form.Group controlId="controlTextarea1">
-                                    <Form.Label>Message</Form.Label>
-                                    <Form.Control 
-                                        as="textarea" 
-                                        type="message" 
-                                        rows="5"
-                                        defaultValue={"I would like to register for " + event.title + 
-                                            " during " + startDate +  " " + startingTime[0] + ":" + startingTime[1] + startDon + " - " + 
-                                            endDate + " " + endingTime[0] + ":" + endingTime[1] + endDon + "."} />
-                                </Form.Group>
-                                <div style={{ textAlign: 'center' }}>
-                                    <Button 
-                                        variant="secondary" 
-                                        type="submit" 
-                                        className="center btn"
-                                        style={{ backgroundColor: color, border: 'none', }}>
-                                        Sign Up
-                                    </Button>
-                                </div>
-                            </Form>
-                        </Col>
+                        <PayPalButton /> 
+                        
                     </div>)
                 }
                 

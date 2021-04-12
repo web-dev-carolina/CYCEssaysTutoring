@@ -1,0 +1,15 @@
+.paypal-container {
+    outline-color: yellow;
+    background-color: transparent;
+}
+
+#aboutsection {
+    height: fit-content !important;
+    position: relative;
+    min-height: calc(100vh + 10px);
+    text-align: center;
+    width: 100%;
+    display: flex!important;
+    align-items: center!important;
+    width: 100%!important;
+}
