@@ -94,6 +94,7 @@ export default class PopupBox extends React.Component {
     
     render () {
         const { event } = this.props;
+console.log(event);
         let color = "#" + event.color;
         let starting = event.start.toString().split(" ");
         let startingTime = starting[4].split(":");
@@ -245,7 +246,7 @@ export default class PopupBox extends React.Component {
                         <Tooltip title="Close">
                             <button onClick={this.handleCloseModal} style={{ border: 'none', float: 'right', backgroundColor: 'Transparent' }}>✕</button>
                         </Tooltip>
-                        <PayPalButton /> 
+                        <PayPalButton event={event} /> 
                         
                     </div>)
                 }

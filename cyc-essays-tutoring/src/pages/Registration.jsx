@@ -15,25 +15,32 @@ export default function Registration() {
   let id = 0;
 
   useEffect(() => {
+    let eventsByMonths = [];
     fireDb
     .ref("/events")
     .on("value", (snapshot) => {
         snapshot.forEach((snap) => {
-          let oneE = snap.val();
-          unorgEvents.push(
-            {
-              id: id,
-              title: oneE.name,
-              start: new Date(oneE.startYear, oneE.startMonth, oneE.startDay, 
-                              oneE.startHour, oneE.startMin),
-              end: new Date(oneE.endYear, oneE.endMonth, oneE.endDay, 
-                            oneE.endHour, oneE.endMin),
-              color: oneE.color,
-              description: oneE.desc,
-              vac: oneE.vac
-            }
-          );
-          id++;
+          eventsByMonths.push(snap.val());
+        });
+        eventsByMonths.forEach((oneMonth) => {
+          let monthEventKeys = Object.keys(oneMonth);
+          monthEventKeys.forEach((eventKey) => {
+            let oneE = oneMonth[eventKey];
+            unorgEvents.push(
+                {
+                  id: id,
+                  title: oneE.name,
+                  start: new Date(oneE.startYear, oneE.startMonth, oneE.startDay, 
+                                  oneE.startHour, oneE.startMin),
+                  end: new Date(oneE.endYear, oneE.endMonth, oneE.endDay, 
+                                oneE.endHour, oneE.endMin),
+                  color: oneE.color,
+                  description: oneE.desc,
+                  vac: oneE.vac
+                }
+            );
+            id++;
+          });
         });
         setEvents(unorgEvents);
     });
