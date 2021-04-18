@@ -94,7 +94,6 @@ export default class PopupBox extends React.Component {
     
     render () {
         const { event } = this.props;
-console.log(event);
         let color = "#" + event.color;
         let starting = event.start.toString().split(" ");
         let startingTime = starting[4].split(":");

@@ -5,7 +5,8 @@ import { Col } from 'react-bootstrap';
 import '../styles/PayPalButton.css';
 import { fontSize } from '@material-ui/system';
 
-export default function PayPalButton() {
+export default function PayPalButton(givenEvent) {
+  const event = givenEvent;
   const [checkout, setCheckout] = React.useState(false);
 
   return (
@@ -30,7 +31,7 @@ export default function PayPalButton() {
           // </div>
         
     <div>
-      <div style={{ textAlign: 'center' }}><strong style={{fontSize: '25px'}}>Register for Feb Event</strong></div><br />
+      <div style={{ textAlign: 'center' }}><strong style={{fontSize: '25px'}}>Register for {event.title}</strong></div><br />
       <Col xs className="pg1-2-txt">
                             <Form>
                                 <Form.Group controlId="formBasicName">
