@@ -93,7 +93,7 @@ export default class PopupBox extends React.Component {
     }
     
     render () {
-        const { event } = this.props;
+        const { event, fromPanel } = this.props;
         let color = "#" + event.color;
         let starting = event.start.toString().split(" ");
         let startingTime = starting[4].split(":");
@@ -194,10 +194,23 @@ export default class PopupBox extends React.Component {
               }
             }).render('#paypal-button-container');
           }
+        
+        // The popup thats in the events panel will say register instead of the event title
+        // This function also sets the registerModal to true so that only the register popup will appear
+        // This is only for the Events Panel and will not break the calendar
+        // fromPanel is a prop that is used to tell if this is for events panel or not
+        const eventBtnText = () => {
+            if (fromPanel) {
+                this.state.registerModal = true;
+                return "Register";
+            } else {
+                return event.title;
+            }
+        }
 
         return (
         <div>           
-            <button style={{ width: '100%', border: 'none', backgroundColor: 'Transparent' }} onClick={this.handleOpenModal}>{event.title}</button>
+            <button style={{ width: '100%', border: 'none', backgroundColor: 'Transparent' }} onClick={this.handleOpenModal}>{eventBtnText()}</button>
             <ReactModal 
                 isOpen={this.state.showModal}
                 contentLabel="Calendar Event"

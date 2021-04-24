@@ -15,8 +15,9 @@ export default function Registration() {
   const [popup, setPopup] = useState(false);
   let id = 0;
 
-  // viewMonth is the month (0-11) that the user is viewing on the calendar
-  const [viewMonth, setViewMonth] = useState(now.getMonth());
+  // These states below contains the month and year that the user is viewing on the calendar
+  const [viewMonth, setViewMonth] = useState(now.toString().split(" ")[1]);
+  const [viewYear, setViewYear] = useState(now.toString().split(" ")[3]);
 
   useEffect(() => {
     let eventsByMonths = [];
@@ -98,25 +99,26 @@ export default function Registration() {
 
     return (
         <div>
-            <div style={{ height: '500pt', zIndex: -1 }}>
+            <div style = {{ height: '500pt', zIndex: -1 }}>
                 <Calendar
-                    events={events}
-                    startAccessor="start"
-                    endAccessor="end"
-                    defaultDate={moment().toDate()}
-                    onNavigate={date => {
-                        setViewMonth(date.getMonth());
+                    events = {events}
+                    startAccessor = "start"
+                    endAccessor = "end"
+                    defaultDate = {moment().toDate()}
+                    onNavigate = {date => {  
+                        setViewMonth(date.toString().split(" ")[1]);
+                        setViewYear(date.toString().split(" ")[3]);
                     }}
-                    localizer={localizer}
-                    components={{
-                    event: Event
+                    localizer = {localizer}
+                    components = {{
+                        event: Event
                     }}
-                    eventPropGetter={(eventStyleGetter)}
-                    style={{ fontFamily: 'Ibarra Real Nova, serif', zIndex: -1 }}
+                    eventPropGetter = {(eventStyleGetter)}
+                    style = {{ fontFamily: 'Ibarra Real Nova, serif', zIndex: -1 }}
                 />
             </div>
-            <EventsPanel events={events} viewMonth={viewMonth} setViewMonth={setViewMonth} />
-            
+
+            <EventsPanel events = {events} viewMonth = {viewMonth} viewYear = {viewYear} />
         </div>
     );
 
