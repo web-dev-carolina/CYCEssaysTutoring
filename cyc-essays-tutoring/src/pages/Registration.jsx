@@ -4,6 +4,7 @@ import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { fireDb } from '../firebase/firebaseConfig';
 import PopupBox from "../components/PopupBox";
+import EventsPanel from "../components/EventsPanel";
 
 const localizer = momentLocalizer(moment);
 
@@ -13,6 +14,9 @@ export default function Registration() {
   const [events, setEvents] = useState([]);
   const [popup, setPopup] = useState(false);
   let id = 0;
+
+  // viewMonth is the month (0-11) that the user is viewing on the calendar
+  const [viewMonth, setViewMonth] = useState(now.getMonth());
 
   useEffect(() => {
     let eventsByMonths = [];
@@ -93,19 +97,26 @@ export default function Registration() {
   }
 
     return (
-        <div style={{ height: '500pt', zIndex: -1 }}>
-          <Calendar
-            events={events}
-            startAccessor="start"
-            endAccessor="end"
-            defaultDate={moment().toDate()}
-            localizer={localizer}
-             components={{
-              event: Event
-            }}
-            eventPropGetter={(eventStyleGetter)}
-            style={{ fontFamily: 'Ibarra Real Nova, serif', zIndex: -1 }}
-          />
+        <div>
+            <div style={{ height: '500pt', zIndex: -1 }}>
+                <Calendar
+                    events={events}
+                    startAccessor="start"
+                    endAccessor="end"
+                    defaultDate={moment().toDate()}
+                    onNavigate={date => {
+                        setViewMonth(date.getMonth());
+                    }}
+                    localizer={localizer}
+                    components={{
+                    event: Event
+                    }}
+                    eventPropGetter={(eventStyleGetter)}
+                    style={{ fontFamily: 'Ibarra Real Nova, serif', zIndex: -1 }}
+                />
+            </div>
+            <EventsPanel events={events} viewMonth={viewMonth} setViewMonth={setViewMonth} />
+            
         </div>
     );
 
