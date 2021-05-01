@@ -8,7 +8,7 @@
 
 .panel {
     height: 100vh;
-    width:22%;
+    width: 350px;
 }
 
 .title {
@@ -36,5 +36,20 @@
 
 .date {
     font-size: 15px;
+    color: rgb(73, 72, 72);
 }
+
+.description {
+    font-size: 18px !important;
+    color: black;
+}
+
+@media (max-width: 600px) 
+{
+    .panel
+    {
+        display: none;
+    }
+}
+
 
