@@ -197,7 +197,7 @@ export default class PopupBox extends React.Component {
         
         // The popup thats in the events panel will say register instead of the event title
         // This function also sets the registerModal to true so that only the register popup will appear
-        // This is only for the Events Panel and will not break the calendar
+        // This is only for the events panel and will not alter the events in calendar
         // fromPanel is a prop that is used to tell if this is for events panel or not
         const eventBtnText = () => {
             if (fromPanel) {
