@@ -1,0 +1,9 @@
+.horzDisplay {
+    display: flex;
+    height:100vh; 
+}
+
+.calendar {
+    width:100%;
+}
+

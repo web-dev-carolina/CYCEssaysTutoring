@@ -1,10 +1,40 @@
 .scroll {
-    background-color: #fed9ff;
-    width: 600px;
-    height: 150px;
+    height: 80%;
     overflow-x: hidden;
     overflow-y: auto;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
+}
+
+.panel {
+    height: 100vh;
+    width:22%;
+}
+
+.title {
+    background-color: white;
+    -webkit-box-shadow: 0 10px 10px -10px #000000;
+    -moz-box-shadow: 0 10px 10px -10px #000000;
+    box-shadow: 0 10px 10px -10px #000000;
+}
+
+.card {
+    margin: 2% !important;
+    padding: 0 !important;
+}
+
+.card-body {
+    margin: 0 !important;
+    margin-bottom: 2% !important;
+    padding: 0 !important;
+}
+
+.register {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.date {
+    font-size: 15px;
 }
 

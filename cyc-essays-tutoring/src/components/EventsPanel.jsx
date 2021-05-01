@@ -4,25 +4,11 @@ import PopupBox from "./PopupBox";
 
 function EventsPanel(props) {
 
-    // to do
-    // put the panel to the left
-    
-    // styling
-
-    // add a event to see if am or pm works
-
-    // This is inline styling for card
-    // style={{width: 18 + "em"}}
-
     const {
         events,
         viewMonth,
         viewYear,
     } = props;
-
-    // useEffect(() => {
-    //     console.log(events);
-    // }, []);
 
     const monthToNum = (month) => {
         if (month === "Jan") {
@@ -67,12 +53,17 @@ function EventsPanel(props) {
             time[2] = "AM";
         }
         
-        return week + " " + monthToNum(month) + "/" + day + "/" + year + " " + time[0] + ":" + time[1] + " " + time[2];
+        return week + " " + day + ", " + time[0] + ":" + time[1] + " " + time[2];
+
+        // below is the full date
+        // return week + " " + monthToNum(month) + "/" + day + "/" + year + " " + time[0] + ":" + time[1] + " " + time[2];
+
     }
 
+
     return (
-        <div>
-            <p>{viewMonth + " " + viewYear + " Events"}</p>
+        <div className="panel">
+            <p class="h4 title">{viewMonth + " " + viewYear + " Events"}</p>
             <div className="scroll">
                 
                 {events.map(x=> {
@@ -81,12 +72,12 @@ function EventsPanel(props) {
                         return (
                             <div key = {x.id}>
                                 
-                                <div className="card" style={{backgroundColor: "#" + x.color}}>
+                                <div className="card shadow" style={{backgroundColor: "#" + x.color}}>
                                     <div className="card-body">
-                                        <h5 className="card-title">{x.title}</h5>
-                                        <p>{formatDate(x.start) + " - " + formatDate(x.end)}</p>
+                                        <h5 className="card-title shadow p-1 rounded">{x.title}</h5>
+                                        <p className="date">{formatDate(x.start) + " - " + formatDate(x.end)}</p>
                                         <p className="card-text">{x.description}</p>
-                                        <div><PopupBox event={x} fromPanel={true}></PopupBox></div>
+                                        <button className="btn btn-outline-light register"><PopupBox event={x} fromPanel={true}></PopupBox></button>
                                     </div>
                                 </div>
                                 

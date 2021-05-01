@@ -5,6 +5,7 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { fireDb } from '../firebase/firebaseConfig';
 import PopupBox from "../components/PopupBox";
 import EventsPanel from "../components/EventsPanel";
+import '../styles/Registration.css';
 
 const localizer = momentLocalizer(moment);
 
@@ -98,8 +99,11 @@ export default function Registration() {
   }
 
     return (
-        <div>
-            <div style = {{ height: '500pt', zIndex: -1 }}>
+        <div className="horzDisplay">
+
+            <EventsPanel events = {events} viewMonth = {viewMonth} viewYear = {viewYear} />
+
+            <div className="calendar">
                 <Calendar
                     events = {events}
                     startAccessor = "start"
@@ -117,8 +121,7 @@ export default function Registration() {
                     style = {{ fontFamily: 'Ibarra Real Nova, serif', zIndex: -1 }}
                 />
             </div>
-
-            <EventsPanel events = {events} viewMonth = {viewMonth} viewYear = {viewYear} />
+     
         </div>
     );
 
