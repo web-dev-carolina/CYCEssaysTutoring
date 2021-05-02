@@ -4,6 +4,8 @@ import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { fireDb } from '../firebase/firebaseConfig';
 import PopupBox from "../components/PopupBox";
+import EventsPanel from "../components/EventsPanel";
+import '../styles/Registration.css';
 
 const localizer = momentLocalizer(moment);
 
@@ -14,26 +16,37 @@ export default function Registration() {
   const [popup, setPopup] = useState(false);
   let id = 0;
 
+  // These states below contains the month and year that the user is viewing on the calendar
+  const [viewMonth, setViewMonth] = useState(now.toString().split(" ")[1]);
+  const [viewYear, setViewYear] = useState(now.toString().split(" ")[3]);
+
   useEffect(() => {
+    let eventsByMonths = [];
     fireDb
     .ref("/events")
     .on("value", (snapshot) => {
         snapshot.forEach((snap) => {
-          let oneE = snap.val();
-          unorgEvents.push(
-            {
-              id: id,
-              title: oneE.name,
-              start: new Date(oneE.startYear, oneE.startMonth, oneE.startDay, 
-                              oneE.startHour, oneE.startMin),
-              end: new Date(oneE.endYear, oneE.endMonth, oneE.endDay, 
-                            oneE.endHour, oneE.endMin),
-              color: oneE.color,
-              description: oneE.desc,
-              vac: oneE.vac
-            }
-          );
-          id++;
+          eventsByMonths.push(snap.val());
+        });
+        eventsByMonths.forEach((oneMonth) => {
+          let monthEventKeys = Object.keys(oneMonth);
+          monthEventKeys.forEach((eventKey) => {
+            let oneE = oneMonth[eventKey];
+            unorgEvents.push(
+                {
+                  id: id,
+                  title: oneE.name,
+                  start: new Date(oneE.startYear, oneE.startMonth, oneE.startDay, 
+                                  oneE.startHour, oneE.startMin),
+                  end: new Date(oneE.endYear, oneE.endMonth, oneE.endDay, 
+                                oneE.endHour, oneE.endMin),
+                  color: oneE.color,
+                  description: oneE.desc,
+                  vac: oneE.vac
+                }
+            );
+            id++;
+          });
         });
         setEvents(unorgEvents);
     });
@@ -86,19 +99,29 @@ export default function Registration() {
   }
 
     return (
-        <div style={{ height: '500pt', zIndex: -1 }}>
-          <Calendar
-            events={events}
-            startAccessor="start"
-            endAccessor="end"
-            defaultDate={moment().toDate()}
-            localizer={localizer}
-             components={{
-              event: Event
-            }}
-            eventPropGetter={(eventStyleGetter)}
-            style={{ fontFamily: 'Ibarra Real Nova, serif', zIndex: -1 }}
-          />
+        <div className="horzDisplay">
+
+            <EventsPanel events = {events} viewMonth = {viewMonth} viewYear = {viewYear} />
+
+            <div className="calendar">
+                <Calendar
+                    events = {events}
+                    startAccessor = "start"
+                    endAccessor = "end"
+                    defaultDate = {moment().toDate()}
+                    onNavigate = {date => {  
+                        setViewMonth(date.toString().split(" ")[1]);
+                        setViewYear(date.toString().split(" ")[3]);
+                    }}
+                    localizer = {localizer}
+                    components = {{
+                        event: Event
+                    }}
+                    eventPropGetter = {(eventStyleGetter)}
+                    style = {{ fontFamily: 'Ibarra Real Nova, serif', zIndex: -1 }}
+                />
+            </div>
+     
         </div>
     );
 

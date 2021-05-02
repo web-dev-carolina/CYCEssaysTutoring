@@ -93,7 +93,7 @@ export default class PopupBox extends React.Component {
     }
     
     render () {
-        const { event } = this.props;
+        const { event, fromPanel } = this.props;
         let color = "#" + event.color;
         let starting = event.start.toString().split(" ");
         let startingTime = starting[4].split(":");
@@ -194,10 +194,23 @@ export default class PopupBox extends React.Component {
               }
             }).render('#paypal-button-container');
           }
+        
+        // The popup thats in the events panel will say register instead of the event title
+        // This function also sets the registerModal to true so that only the register popup will appear
+        // This is only for the events panel and will not alter the events in calendar
+        // fromPanel is a prop that is used to tell if this is for events panel or not
+        const eventBtnText = () => {
+            if (fromPanel) {
+                this.state.registerModal = true;
+                return "Register";
+            } else {
+                return event.title;
+            }
+        }
 
         return (
         <div>           
-            <button style={{ width: '100%', border: 'none', backgroundColor: 'Transparent' }} onClick={this.handleOpenModal}>{event.title}</button>
+            <button style={{ width: '100%', border: 'none', backgroundColor: 'Transparent' }} onClick={this.handleOpenModal}>{eventBtnText()}</button>
             <ReactModal 
                 isOpen={this.state.showModal}
                 contentLabel="Calendar Event"
@@ -240,45 +253,13 @@ export default class PopupBox extends React.Component {
                     :
                     (<div>
 
-                        <PayPalButton />                    
+                                           
 
                         <Tooltip title="Close">
                             <button onClick={this.handleCloseModal} style={{ border: 'none', float: 'right', backgroundColor: 'Transparent' }}>✕</button>
                         </Tooltip>
-                        <div style={{ textAlign: 'center' }}><strong style={{fontSize: '25px'}}>Register for {event.title}</strong></div><br />
-                        <Col xs className="pg1-2-txt">
-                            <Form
-                            onSubmit={this.handleSendEmail}
-                            >
-                                <Form.Group controlId="formBasicName">
-                                    <Form.Label>Name</Form.Label>
-                                    <Form.Control type="name" placeholder="Enter your name" />
-                                </Form.Group>
-                                <Form.Group controlId="formBasicEmail">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                </Form.Group>
-                                <Form.Group controlId="controlTextarea1">
-                                    <Form.Label>Message</Form.Label>
-                                    <Form.Control 
-                                        as="textarea" 
-                                        type="message" 
-                                        rows="5"
-                                        defaultValue={"I would like to register for " + event.title + 
-                                            " during " + startDate +  " " + startingTime[0] + ":" + startingTime[1] + startDon + " - " + 
-                                            endDate + " " + endingTime[0] + ":" + endingTime[1] + endDon + "."} />
-                                </Form.Group>
-                                <div style={{ textAlign: 'center' }}>
-                                    <Button 
-                                        variant="secondary" 
-                                        type="submit" 
-                                        className="center btn"
-                                        style={{ backgroundColor: color, border: 'none', }}>
-                                        Sign Up
-                                    </Button>
-                                </div>
-                            </Form>
-                        </Col>
+                        <PayPalButton event={event} /> 
+                        
                     </div>)
                 }
                 

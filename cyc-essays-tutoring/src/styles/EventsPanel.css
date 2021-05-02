@@ -1,0 +1,55 @@
+.scroll {
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 0px;
+}
+
+.panel {
+    height: 100vh;
+    width: 350px;
+}
+
+.title {
+    background-color: white;
+    -webkit-box-shadow: 0 10px 10px -10px #000000;
+    -moz-box-shadow: 0 10px 10px -10px #000000;
+    box-shadow: 0 10px 10px -10px #000000;
+}
+
+.card {
+    margin: 2% !important;
+    padding: 0 !important;
+}
+
+.card-body {
+    margin: 0 !important;
+    margin-bottom: 2% !important;
+    padding: 0 !important;
+}
+
+.register {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.date {
+    font-size: 15px;
+    color: rgb(73, 72, 72);
+}
+
+.description {
+    font-size: 18px !important;
+    color: black;
+}
+
+@media (max-width: 600px) 
+{
+    .panel
+    {
+        display: none;
+    }
+}
+
+
