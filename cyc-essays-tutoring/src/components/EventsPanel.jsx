@@ -77,7 +77,9 @@ function EventsPanel(props) {
                                         <h5 className="card-title shadow p-1 rounded">{x.title}</h5>
                                         <p className="date">{formatDate(x.start) + " - " + formatDate(x.end)}</p>
                                         <p className="description">{x.description}</p>
-                                        <button className="btn btn-outline-light register"><PopupBox event={x} fromPanel={true}></PopupBox></button>
+                                        <button className="btn btn-outline-light register">
+                                            <PopupBox event={x} fromPanel={true}></PopupBox>
+                                        </button>
                                     </div>
                                 </div>
                                 
