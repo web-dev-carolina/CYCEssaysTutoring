@@ -35,6 +35,7 @@ export default function Registration() {
             unorgEvents.push(
                 {
                   id: id,
+                  key: eventKey,
                   title: oneE.name,
                   start: new Date(oneE.startYear, oneE.startMonth, oneE.startDay, 
                                   oneE.startHour, oneE.startMin),
@@ -49,6 +50,7 @@ export default function Registration() {
           });
         });
         setEvents(unorgEvents);
+        console.log(events);
     });
   }, []);
 
