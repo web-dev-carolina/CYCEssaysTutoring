@@ -70,14 +70,15 @@ function EventsPanel(props) {
                     if (x.start.toString().split(" ")[1] === viewMonth && x.start.toString().split(" ")[3] === viewYear) {
             
                         return (
-                            <div key = {x.id}>
-                                
+                            <div key = {x.id} className={x.key}>
                                 <div className="card shadow" style={{backgroundColor: "#" + x.color}}>
                                     <div className="card-body">
                                         <h5 className="card-title shadow p-1 rounded">{x.title}</h5>
                                         <p className="date">{formatDate(x.start) + " - " + formatDate(x.end)}</p>
                                         <p className="description">{x.description}</p>
-                                        <button className="btn btn-outline-light register"><PopupBox event={x} fromPanel={true}></PopupBox></button>
+                                        <button className="btn btn-outline-light register">
+                                            <PopupBox event={x} fromPanel={true}></PopupBox>
+                                        </button>
                                     </div>
                                 </div>
                                 

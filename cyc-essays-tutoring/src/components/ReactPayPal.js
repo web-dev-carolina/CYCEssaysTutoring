@@ -27,6 +27,7 @@ export default function ReactPayPal() {
             const order = await actions.order.capture();
             setPaid(true);
             console.log(order);
+            // function to make registration go through to firebase
           },
           onError: (err) => {
           //   setError(err),
