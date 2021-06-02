@@ -1,0 +1,92 @@
+.item .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 120, 233, 0.75);
+    transition: opacity 0.15s ease-in;
+    opacity: 0;
+    padding-top: 80px;
+    color: #fff;
+    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)*/
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+    .item .box {
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 50px!important;
+        width: 50px!important;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .item .box {
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 70px!important;
+        width: 70px!important;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .item .box {
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 90px!important;
+        width: 90px!important;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1025px) {
+    .item .box {
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 110px!important;
+        width: 110px!important;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.item .box {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item:hover .cover {
+    opacity: 1
+}
+
+.outer{
+    width:100%;
+}
+
+.contentt{
+    padding: 0%;
+}
+
+.name {
+    font-size: 1.5vw;
+}

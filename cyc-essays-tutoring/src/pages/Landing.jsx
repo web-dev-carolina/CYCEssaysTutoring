@@ -6,6 +6,7 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer.jsx';
 import NewTestimonials from '../components/Testimonials.jsx';
 import '../styles/Landing.css';
+import ResultsPage from '../components/ResultsPage.jsx'
 import { Axios, db } from '../firebase/firebaseConfig';
 
 
@@ -61,6 +62,7 @@ const Landing = () => {
             <About id='aboutsection'/>
             <Workshop id='workshopsection'/>
             <NewTestimonials id="newTestimonialSection"/>
+            <ResultsPage id="ResultsPage"/>
             <Contact id='contactsection' handleSubmit={handleSubmit}
             />
             <Footer/>
